@@ -683,7 +683,6 @@
     <main>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12">
                     <div class="col-12 d-flex">
                         <div class="col-3">
                             <button type="button" class="btn btn-success d-block py-1 mb-3" data-toggle="modal" data-target="#staticBackdrop">Регистрация нового сотрудника</button>
@@ -700,37 +699,54 @@
                             <form class="form-inline form-row">
                                 <input type="text" class="form-control form-control-lg col" placeholder="Поиск">
                             </form>
-                            <table class="table table-bordered shadow-sm mt-3" >
+                            <div class="card mt-3" style="height: 535px;">
+                                <div class="card-body">
+                                    <table class="table table-bordered h 100">
                                 <thead class="text-center table-active">
                                     <th>Сотрудники</th>
                                 </thead>
-                                <tbody class="table-light h 100" style="height: 485px;">
-                                    <td></td>
+                                <tbody >
+                                    <tr>
+                                        <td></td>
+                                    </tr> 
                                 </tbody>
                             </table>
+                                </div>
+                            </div>
+                            
+                            <!-- <table class="table table-bordered shadow-sm mt-3 table-light h 100">
+                                <thead class="text-center table-active">
+                                    <th>Сотрудники</th>
+                                </thead>
+                                <tbody style="height: 535px;">
+                                    <tr>
+                                        <td></td>
+                                    </tr> 
+                                </tbody>
+                            </table> -->
                         </div>
                         <div class="col-4">
                             <table class="table table-bordered shadow-sm table-light">
                                 <thead>
-                                    <th class="col-3 py-2 text-center">Дата</th>
-                                    <th class="col-6 py-2 text-center">Документ</th>
-                                    <th class="col-3 py-2 text-center">Номер</th>
+                                    <th class="w-25 py-2 text-center">Дата</th>
+                                    <th class="w-50 py-2 text-center">Документ</th>
+                                    <th class="w-25 py-2 text-center">Номер</th>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class="col-3 py-2"></td>
-                                        <td class="col-6 py-2"><a href="#">Принятие на работу</a></td>
-                                        <td class="col-3 py-2"></td>
+                                        <td class="py-2"></td>
+                                        <td class="py-2"><a href="#">Принятие на работу</a></td>
+                                        <td class="py-2"></td>
                                     </tr>
                                     <tr>
-                                        <td class="col-3 py-2"></td>
-                                        <td class="col-6 py-2"><a href="#">Начисление зарплаты</a></td>
-                                        <td class="col-3 py-2"></td>
+                                        <td class="py-2"></td>
+                                        <td class="py-2"><a href="#">Начисление зарплаты</a></td>
+                                        <td class="py-2"></td>
                                     </tr>
                                     <tr>
-                                        <td class="col-3 py-2"></td>
-                                        <td class="col-6 py-2"><a href="#">Док</a></td>
-                                        <td class="col-3 py-2"></td>
+                                        <td class="py-2"></td>
+                                        <td class="py-2"><a href="#">Док</a></td>
+                                        <td class="py-2"></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -738,32 +754,32 @@
                             <table class="table table-bordered shadow-sm table-light">
                                 <tbody>
                                     <tr>
-                                        <td class="py-2 col-4 text-right"><u>ИНН:</u></td>
-                                        <td class="py-2 col-8"></td>
+                                        <td class="w-25 py-2 text-right"><u>ИНН:</u></td>
+                                        <td class="w-75 py-2"></td>
                                     </tr>
                                     <tr>
-                                        <td class="py-2 col-4 text-right"><u>Дата рождения:</u></td>
-                                        <td class="py-2 col-8"></td>
+                                        <td class="py-2 text-right"><u>Дата рождения:</u></td>
+                                        <td class="py-2"></td>
                                     </tr>
                                     <tr>
-                                        <td class="py-2 col-4 text-right"><u>Тел. мобильный:</u></td>
-                                        <td class="py-2 col-8"></td>
+                                        <td class="py-2 text-right"><u>Тел. мобильный:</u></td>
+                                        <td class="py-2"></td>
                                     </tr>
                                     <tr>
-                                        <td class="py-2 col-4 text-right"><u>Тел. рабочий:</u></td>
-                                        <td class="py-2 col-8"></td>
+                                        <td class="py-2 text-right"><u>Тел. рабочий:</u></td>
+                                        <td class="py-2"></td>
                                     </tr>
                                     <tr>
-                                        <td class="py-2 col-4 text-right"><u>Эл. почта:</u></td>
-                                        <td class="py-2 col-8"></td>
+                                        <td class="py-2 text-right"><u>Эл. почта:</u></td>
+                                        <td class="py-2"></td>
                                     </tr>
                                     <tr>
-                                        <td class="py-2 col-4 text-right"><u>Адрес осн:</u></td>
-                                        <td class="py-2 col-8"></td>
+                                        <td class="py-2 text-right"><u>Адрес осн:</u></td>
+                                        <td class="py-2"></td>
                                     </tr>
                                     <tr>
-                                        <td class="py-2 col-4 text-right"><u>Адрес доп:</u></td>
-                                        <td class="py-2 col-8"></td>
+                                        <td class="py-2 text-right"><u>Адрес доп:</u></td>
+                                        <td class="py-2"></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -771,33 +787,33 @@
                         <div class="col-4">
                             <table class="table table-bordered shadow-sm table-light">
                                 <thead>
-                                    <th class="col-5 py-2 text-center">Обязательные</th>
-                                    <th class="col-7 py-2 text-center">Необязательные</th>
+                                    <th class="w-40 py-2 text-center">Обязательные</th>
+                                    <th class="w-60 py-2 text-center">Необязательные</th>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class="col-5 py-2"><div class="form-check form-check-inline">
+                                        <td class=" py-2"><div class="form-check form-check-inline">
                                             <input class="form-check-input position-static" type="checkbox">
                                           </div>
                                           <a href="#"><u>Наркологический</u></a>
                                         </td>
-                                        <td class="col-7 py-2"><a href="#"><u>О работе</u></a></td>
+                                        <td class=" py-2"><a href="#"><u>О работе</u></a></td>
                                     </tr>
                                     <tr>
-                                        <td class="col-5 py-2"><div class="form-check form-check-inline">
+                                        <td class=" py-2"><div class="form-check form-check-inline">
                                             <input class="form-check-input position-static" type="checkbox">
                                           </div>
                                           <a href="#"><u>Судимость</u></a>
                                         </td>
-                                        <td class="col-7 py-2"><a href="#"><u>О зарплате</u></a></td>
+                                        <td class=" py-2"><a href="#"><u>О зарплате</u></a></td>
                                     </tr>
                                     <tr>
-                                        <td class="col-5 py-2"><div class="form-check form-check-inline">
+                                        <td class=" py-2"><div class="form-check form-check-inline">
                                             <input class="form-check-input position-static" type="checkbox">
                                           </div>
                                           <a href="#"><u>Здоровье</u></a>
                                         </td>
-                                        <td class="col-7 py-2"></td>
+                                        <td class=" py-2"></td>
                                     </tr>
                                     <tr>
                                         <td class="py-2 text-center"><button type="button" class="btn btn-success btn-sm py-1">Добавить справку</button></td>
@@ -842,205 +858,11 @@
                     </table>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
+     </main>
 
-
-  <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered float-right">
-      <div class="modal-content">
-        <div class="modal-header">
-            <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                  <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
-                  <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
-                  <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
-                </div>
-              </nav>
-              <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
-              </div>
-          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Understood</button>
-        </div>
-      </div>
-    </div>
-  </div>
-    </main>
-
-    <!-- <main>
-        <div class="container-fluid">
-            <button type="button" class="btn btn-success d-block py-1">Регистрация нового сотрудника</button>
-            <div class="row">
-                <div class="col-6">
-                    <div class="row">
-                        <div class="col-5">
-                            <form class="form-inline my-3 form-row">
-                                <input type="text" class="form-control form-control-lg col" placeholder="Поиск">
-                            </form>
-                            <table class="table table-bordered shadow-sm" >
-                                <thead class="text-center table-active">
-                                    <th>Сотрудники</th>
-                                </thead>
-                                <tbody class="table-light h 100" style="height: 485px;">
-                                    <td></td>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="col-7">
-                            <h5 class="h5 text-center">Данные по сотруднику</h5>
-                            <table class="table table-bordered shadow-sm table-light">
-                                <tbody>
-                                    <tr>
-                                        <td class="py-1 col-4 text-right"><u>ИНН:</u></td>
-                                        <td class="py-1 col-8"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-1 col-4 text-right"><u>Дата рождения:</u></td>
-                                        <td class="py-1 col-8"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-1 col-4 text-right"><u>Тел. мобильный:</u></td>
-                                        <td class="py-1 col-8"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-1 col-4 text-right"><u>Тел. рабочий:</u></td>
-                                        <td class="py-1 col-8"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-1 col-4 text-right"><u>Эл. почта:</u></td>
-                                        <td class="py-1 col-8"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-1 col-4 text-right"><u>Адрес осн:</u></td>
-                                        <td class="py-1 col-8"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-1 col-4 text-right"><u>Адрес доп:</u></td>
-                                        <td class="py-1 col-8"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <h5 class="h5 text-center">Справки по сотруднику</h5>
-                            <table class="table table-bordered shadow-sm table-light">
-                                <thead>
-                                    <th class="col-5 py-1 text-center">Обязательные</th>
-                                    <th class="col-7 py-1 text-center">Необязательные</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="col-5 py-1"><div class="form-check form-check-inline">
-                                            <input class="form-check-input position-static" type="checkbox">
-                                          </div>
-                                          <a href="#"><u>Наркологический</u></a>
-                                        </td>
-                                        <td class="col-7 py-1"><a href="#"><u>О работе</u></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="col-5 py-1"><div class="form-check form-check-inline">
-                                            <input class="form-check-input position-static" type="checkbox">
-                                          </div>
-                                          <a href="#"><u>Судимость</u></a>
-                                        </td>
-                                        <td class="col-7 py-1"><a href="#"><u>О зарплате</u></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="col-5 py-1"><div class="form-check form-check-inline">
-                                            <input class="form-check-input position-static" type="checkbox">
-                                          </div>
-                                          <a href="#"><u>Здоровье</u></a>
-                                        </td>
-                                        <td class="col-7 py-1"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-1 text-center"><button type="button" class="btn btn-success btn-sm py-1">Добавить справку</button></td>
-                                        <td class="py-1 text-center"><button type="button" class="btn btn-success btn-sm py-1">Добавить свободный шаблон</button></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <h5 class="h5 text-center">Документы по сотруднику</h5>
-                            <table class="table table-bordered shadow-sm table-light">
-                                <thead>
-                                    <th class="col-3 py-1 text-center">Дата</th>
-                                    <th class="col-6 py-1 text-center">Документ</th>
-                                    <th class="col-3 py-1 text-center">Номер</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="col-3 py-1"></td>
-                                        <td class="col-6 py-1"><a href="#">Принятие на работу</a></td>
-                                        <td class="col-3 py-1"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="col-3 py-1"></td>
-                                        <td class="col-6 py-1"><a href="#">Начисление зарплаты</a></td>
-                                        <td class="col-3 py-1"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="col-3 py-1"></td>
-                                        <td class="col-6 py-1"><a href="#">Док</a></td>
-                                        <td class="col-3 py-1"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <h5 class="h5 ">Сотрудники с неполными данными</h5>
-                    <table class="table table-bordered shadow-sm table-light">
-                        <thead>
-                            <th class="col-4 py-1 text-center">Сотрудники</th>
-                            <th class="col-1 py-1 text-center">Телефон</th>
-                            <th class="col-1 py-1 text-center">Почта</th>
-                            <th class="col-1 py-1 text-center">Адрес</th>
-                            <th class="col-5 py-1 text-center"></th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="col-4 py-1 text-center"></td>
-                                <td class="col-1 py-1 text-center"><div class="form-check form-check-inline">
-                                    <input class="form-check-input position-static" type="checkbox">
-                                  </div></td>
-                                <td class="col-1 py-1 text-center"><div class="form-check form-check-inline">
-                                    <input class="form-check-input position-static" type="checkbox">
-                                  </div></td>
-                                <td class="col-1 py-1 text-center"><div class="form-check form-check-inline">
-                                    <input class="form-check-input position-static" type="checkbox">
-                                  </div></td>
-                                <td class="col-5 py-1 text-center"></td>
-                            </tr>
-                            <tr>
-                                <td class="col-4 py-1 text-center"></td>
-                            <td class="col-1 py-1 text-center"><div class="form-check form-check-inline">
-                                <input class="form-check-input position-static" type="checkbox">
-                              </div></td>
-                            <td class="col-1 py-1 text-center"><div class="form-check form-check-inline">
-                                <input class="form-check-input position-static" type="checkbox">
-                              </div></td>
-                            <td class="col-1 py-1 text-center"><div class="form-check form-check-inline">
-                                <input class="form-check-input position-static" type="checkbox">
-                              </div></td>
-                            <td class="col-5 py-1 text-center"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col-6"></div>
-            </div>
-        </div>
-    </main> -->
-    
+       
     <!-- <main>
         <div class="container-fluid">
             <div class="row">
