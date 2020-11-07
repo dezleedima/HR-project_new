@@ -3935,7 +3935,7 @@ select.form-control {
   background-color: #145388; }
 
 .nav-pills .nav-link {
-  border-radius: 50px; }
+  border-radius: 10px; }
 
 @media (max-width: 767px) {
   .nav-link {
@@ -4649,7 +4649,7 @@ a.ck.ck-button.ck-on:not(.ck-disabled):hover {
 /* 35.Icons */
 .simple-line-icons .glyph,
 .mind-icons .glyph {
-  width: 14.28%;
+  width: 20.28%;
   text-align: center !important;
   float: left;
   height: 100px; }
