@@ -4411,11 +4411,11 @@ div.dataTables_wrapper div.dataTables_filter input {
     margin-top: 0;
     margin-bottom: 0;
     height: 100%;
-    max-width: 380px; }
+    max-width: 680px; }
   .modal-right .modal-content {
     min-height: 100%; }
   .modal-right .modal-header {
-    flex: 0 0 100px; }
+    max-height: 200px; }
     @media (max-width: 1439px) {
       .modal-right .modal-header {
         flex: 0 0 90px; } }
