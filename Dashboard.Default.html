@@ -873,54 +873,87 @@
                                 </div>
                                 <p class="text-center">Данное меню поможет вам быстро и удобно зарегистрировать сотрудника, заполнив 
                                     самые необходимые данные</p>
-                                    <ul class="nav nav-pills">
-                                        <li class="nav-item">
-                                            <a class="nav-link active " href="#">Active</a>
+                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                          <a class="nav-link active text-center" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Основные <br>
+                                            данные</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Link</a>
+                                        <li class="nav-item" role="presentation">
+                                          <a class="nav-link text-center" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Контактная <br>
+                                            информация</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Link</a>
+                                        <li class="nav-item" role="presentation">
+                                          <a class="nav-link text-center" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Условие <br>
+                                            договора</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link disabled" href="#">Disabled</a>
-                                        </li>
-                                    </ul>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link text-center" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Дополнительная<br>
+                                                информация</a>
+                                          </li>
+                                          <li class="nav-item" role="presentation">
+                                            <a class="nav-link text-center" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Итог и<br>
+                                                завершение</a>
+                                          </li>
+                                      </ul>
+                                      
                                
                             </div>
                             <div class="modal-body">
-
-                                <form>
-                                    <div class="form-group">
-                                        <label>Title</label>
-                                        <input type="text" class="form-control" placeholder="">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Details</label>
-                                        <textarea placeholder="" class="form-control" rows="2"></textarea>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Category</label>
-                                        <select class="form-control">
-                                            <option label="&nbsp;">&nbsp;</option>
-                                            <option value="Flexbox">Flexbox</option>
-                                            <option value="Sass">Sass</option>
-                                            <option value="React">React</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Status</label>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input"
-                                                id="customCheck1">
-                                            <label class="custom-control-label"
-                                                for="customCheck1">Completed</label>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                        <div class="btn-group float-right">
+                                            <a href="#" class=" simple-icon-settings" type="button"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <div class="form-check dropdown-item ml-3">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck11">
+                                                    <label class="form-check-label" for="defaultCheck11">
+                                                      Отобразить "Отчество"
+                                                    </label></div>
+                                                    <div class="form-check dropdown-item ml-3">
+                                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck12">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            Отобразить "Номер паспорта"
+                                                        </label></div>
+                                            </div>
                                         </div>
+                                        <h2 class="text-center"><strong>Личная информация</strong></h2>
+                                        <form>
+                                            <div class="form-group">
+                                                <label>Title</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Details</label>
+                                                <textarea placeholder="" class="form-control" rows="2"></textarea>
+                                            </div>
+        
+                                            <div class="form-group">
+                                                <label>Category</label>
+                                                <select class="form-control">
+                                                    <option label="&nbsp;">&nbsp;</option>
+                                                    <option value="Flexbox">Flexbox</option>
+                                                    <option value="Sass">Sass</option>
+                                                    <option value="React">React</option>
+                                                </select>
+                                            </div>
+        
+                                            <div class="form-group">
+                                                <label>Status</label>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input"
+                                                        id="customCheck1">
+                                                    <label class="custom-control-label"
+                                                        for="customCheck1">Completed</label>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
-                                </form>
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                                  </div>
+                                
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-outline-primary"
