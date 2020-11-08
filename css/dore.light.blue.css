@@ -3935,7 +3935,7 @@ select.form-control {
   background-color: #145388; }
 
 .nav-pills .nav-link {
-  border-radius: 50px; }
+  border-radius: 10px; }
 
 @media (max-width: 767px) {
   .nav-link {
