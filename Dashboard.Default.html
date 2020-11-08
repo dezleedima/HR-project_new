@@ -900,7 +900,7 @@
                             </div>
                             <div class="modal-body">
                                 <div class="tab-content" id="pills-tabContent">
-                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <div class="tab-pane fade show active" id="pills-home"  role="tabpanel" aria-labelledby="pills-home-tab">
                                         <div class="btn-group float-right">
                                             <a href="#" class=" simple-icon-settings" type="button"
                                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -915,45 +915,65 @@
                                                         <input class="form-check-input" type="checkbox" value="" id="defaultCheck12">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             Отобразить "Номер паспорта"
-                                                        </label></div>
+                                                        </label>
+                                                    </div>
                                             </div>
                                         </div>
-                                        <h2 class="text-center"><strong>Личная информация</strong></h2>
-                                        <form>
-                                            <div class="form-group">
-                                                <label>Title</label>
-                                                <input type="text" class="form-control" placeholder="">
+                                        <h2 class="text-center mb-5"><strong>Личная информация</strong></h2>
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <form>
+                                                    <div class="form-group row">
+                                                        <label for="inputINN" class="col-sm-4 col-form-label">ИНН:</label>
+                                                        <div class="col-sm-6">
+                                                          <input type="text" class="form-control form-control-sm" id="inputINN">
+                                                        </div>
+                                                        <a class="col-sm-2" href="#"><i class="simple-icon-cloud-download"></i></a>
+                                                    </div>
+                                                    <div class="form-group row ">
+                                                        <label for="inputname" class="col-sm-4 col-form-label">Имя:</label>
+                                                        <div class="col-sm-8">
+                                                          <input type="text" class="form-control form-control-sm" id="inputname">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row ">
+                                                        <label for="inputsurname" class="col-sm-4 col-form-label">Фамилие:</label>
+                                                        <div class="col-sm-8">
+                                                          <input type="text" class="form-control form-control-sm" id="inputsurname">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row ">
+                                                        <label for="inputfname" class="col-sm-4 col-form-label">Очество:</label>
+                                                        <div class="col-sm-8">
+                                                          <input type="text" class="form-control form-control-sm" id="inpuftname">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row ">
+                                                        <label for="inputpasnumber" class="col-sm-4 col-form-label">Номер паспорта:</label>
+                                                        <div class="col-sm-8">
+                                                          <input type="text" class="form-control form-control-sm" id="inputpasnumber">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row ">
+                                                        <label for="inputbirth" class="col-sm-4 col-form-label">Дата рождения:</label>
+                                                        <div class="col-sm-8">
+                                                          <input type="text" class="form-control form-control-sm" id="inputbirth">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row ">
+                                                        <label for="inputcityzen" class="col-sm-4 col-form-label">Гражданство:</label>
+                                                        <div class="col-sm-8">
+                                                          <input type="text" class="form-control form-control-sm" id="inputcityzen">
+                                                        </div>
+                                                    </div>
+                                                </form>
                                             </div>
-                                            <div class="form-group">
-                                                <label>Details</label>
-                                                <textarea placeholder="" class="form-control" rows="2"></textarea>
-                                            </div>
-        
-                                            <div class="form-group">
-                                                <label>Category</label>
-                                                <select class="form-control">
-                                                    <option label="&nbsp;">&nbsp;</option>
-                                                    <option value="Flexbox">Flexbox</option>
-                                                    <option value="Sass">Sass</option>
-                                                    <option value="React">React</option>
-                                                </select>
-                                            </div>
-        
-                                            <div class="form-group">
-                                                <label>Status</label>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input"
-                                                        id="customCheck1">
-                                                    <label class="custom-control-label"
-                                                        for="customCheck1">Completed</label>
-                                                </div>
-                                            </div>
-                                        </form>
+                                            <div class="col-4"></div>
+                                        </div>
                                     </div>
-                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
-                                  </div>
-                                
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">222</div>
+                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">333</div>
+                                </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-outline-primary"
