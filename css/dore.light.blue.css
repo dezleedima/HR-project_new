@@ -6599,3 +6599,13 @@ footer.page-footer {
   @media (max-width: 1199px) {
     .rtl.right-menu footer.page-footer {
       padding-left: 0; } }
+.modal_pos {
+  position: absolute;
+  top: 10px;
+  right: 100px;
+  bottom: 300px;
+  left: 0;
+  z-index: 10040;
+  overflow: auto;
+  overflow-y: auto;
+}
