@@ -714,21 +714,14 @@
                                 <a class="iconsminds-add h4 text-primary ml-2" data-toggle="tooltip"
                                 data-placement="bottom" title="Создать документ" href="#"></a>
                             </div>
-                             <div class="d-inline" data-toggle="tooltip" data-placement="bottom" title="Поиск документа">
-                                <a class="iconsminds-magnifi-glass h4 text-primary" data-toggle="collapse" href="#collapseExample123"
-                                role="button" aria-expanded="true" aria-controls="collapseExample123"></a>
-                                <div class="collapse" id="collapseExample123">
-                                    <div class="p-1 border mt-2">
-                                        <div class="col">
-                                            <form class="form-inline form-row">
-                                                <input type="text" class="form-control form-control-lg col" placeholder="Поиск">
-                                            </form>
-                                        </div>    
-                                    </div>
-                               </div>
-                            </div>
+                           
                         </div>
                     <div>
+                        <div class="d-inline" data-toggle="tooltip" data-placement="bottom" title="Поиск документа">
+                            <a class="iconsminds-magnifi-glass h4 text-primary" data-toggle="collapse" href="#collapseExample123"
+                            role="button" aria-expanded="true" aria-controls="collapseExample123"></a>
+                            
+                        </div>
                         <div class="btn-group dropleft mr-2" data-toggle="tooltip" data-placement="bottom" title="Отображение">
                                 <a href="#" class="h4 simple-icon-eye text-primary" type="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -783,8 +776,22 @@
                             </div>                               
                         </div>
                     </div>
+                    <div class="collapse" id="collapseExample123">
+                        <div class="row p-1 mt-2">
+                            <div class="col-2">
+                                <form class="form-inline form-row">
+                                    <input type="text" class="form-control form-control-lg col" placeholder="Поиск по номеру">
+                                </form>
+                            </div> 
+                            <div class="col-2">
+                                <form class="form-inline form-row">
+                                    <input type="text" class="form-control form-control-lg col" placeholder="Поиск по дате">
+                                </form>
+                            </div>    
+                        </div>
+                   </div>
                     <div class="card w-100 p-2 mt-2" style="height: 550px;">
-                        <div class="card-body p-0">
+                        <div class="card-body p-0 overflow-auto">
                             <table class="table table-bordered">
                                 <thead>
                                   <tr>
@@ -810,7 +817,7 @@
                                         </thead>
                                         <tbody>
                                           <tr>
-                                            <th scope="row" class="">
+                                            <th scope="row" class="align-middle">
                                                 <div class="d-flex align-items-center">
                                                     <a class="iconsminds-up---down h6 mt-1 mb-0" href="#"></a>
                                                     <div class="">
@@ -818,7 +825,8 @@
                                                             <input type="checkbox" class="custom-control-input" id="customCheckThis1">
                                                             <label class="custom-control-label" for="customCheckThis1"></label>
                                                         </div>
-                                                    </div><p class="text-center">000001</p>
+                                                    </div>
+                                                    <a class="offset-3" href="#">000001</a>
                                                 </div>   
                                             </th>
                                             <td></td>
@@ -826,7 +834,7 @@
                                             <td><a class="simple-icon-pencil h5 text-primary float-right" href="#"></a></td>
                                           </tr>
                                           <tr>
-                                            <th scope="row">
+                                            <th scope="row" class="align-middle">
                                                 <div class="d-flex">
                                                     <a class="iconsminds-up---down h6 mt-1 mb-0" href="#"></a>
                                                     <div class="">
@@ -835,6 +843,69 @@
                                                             <label class="custom-control-label" for="customCheckThis2"></label>
                                                         </div>
                                                     </div>
+                                                    <a class="offset-3" href="#">000002</a>
+                                                </div>
+                                            </th>
+                                            <td></td>
+                                            <td class="bg-success"></td>
+                                            <td><a class="simple-icon-pencil h5 text-primary float-right" href="#"></a></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>   
+                                </div>
+                             </div>
+                             <table class="table table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th class="bg-light py-2">
+                                        <div class="d-inline">
+                                        <a class="simple-icon-arrow-down h6 text-primary" data-toggle="collapse" href="#collapseExample222"
+                                        role="button" aria-expanded="true" aria-controls="collapseExample222"></a>
+                                        </div><h5 class="d-inline ml-3">Сохраненные</h5>
+                                    </th>
+                                  </tr>
+                                </thead>
+                              </table>
+                              <div class="collapse" id="collapseExample222">
+                                <div class="">
+                                    <table class="table table-bordered table-sm">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col" class="w-20 h6 text-center">Номер</th>
+                                            <th scope="col" class="w-15 h6 text-center">Дата</th>
+                                            <th scope="col" class="w-15 h6 text-center">Статус</th>
+                                            <th scope="col" class="w-50 h6 text-center">Коментарий</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row" class="align-middle">
+                                                <div class="d-flex align-items-center">
+                                                    <a class="iconsminds-up---down h6 mt-1 mb-0" href="#"></a>
+                                                    <div class="">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="customCheckThis3">
+                                                            <label class="custom-control-label" for="customCheckThis3"></label>
+                                                        </div>
+                                                    </div>
+                                                    <a class="offset-3" href="#">000003</a>
+                                                </div>   
+                                            </th>
+                                            <td></td>
+                                            <td class="bg-warning"></td>
+                                            <td><a class="simple-icon-pencil h5 text-primary float-right" href="#"></a></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" class="align-middle">
+                                                <div class="d-flex">
+                                                    <a class="iconsminds-up---down h6 mt-1 mb-0" href="#"></a>
+                                                    <div class="">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="customCheckThis4">
+                                                            <label class="custom-control-label" for="customCheckThis4"></label>
+                                                        </div>
+                                                    </div>
+                                                    <a class="offset-3" href="#">000004</a>
                                                 </div>
                                             </th>
                                             <td></td>
@@ -845,6 +916,83 @@
                                       </table>   
                                 </div>
                              </div>
+                             <table class="table table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th class="bg-light py-2">
+                                        <div class="d-inline">
+                                        <a class="simple-icon-arrow-down h6 text-primary" data-toggle="collapse" href="#collapseExample333"
+                                        role="button" aria-expanded="true" aria-controls="collapseExample333"></a>
+                                        </div><h5 class="d-inline ml-3">Удаленые</h5>
+                                    </th>
+                                  </tr>
+                                </thead>
+                              </table>
+                              <div class="collapse" id="collapseExample333">
+                                <div class="">
+                                    <table class="table table-bordered table-sm">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col" class="w-20 h6 text-center">Номер</th>
+                                            <th scope="col" class="w-15 h6 text-center">Дата</th>
+                                            <th scope="col" class="w-15 h6 text-center">Статус</th>
+                                            <th scope="col" class="w-50 h6 text-center">Коментарий</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row" class="align-middle">
+                                                <div class="d-flex align-items-center">
+                                                    <a class="iconsminds-up---down h6 mt-1 mb-0" href="#"></a>
+                                                    <div class="">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="customCheckThis5">
+                                                            <label class="custom-control-label" for="customCheckThis5"></label>
+                                                        </div>
+                                                    </div>
+                                                    <a class="offset-3" href="#">000009</a>
+                                                </div>   
+                                            </th>
+                                            <td></td>
+                                            <td class="bg-danger"></td>
+                                            <td><a class="simple-icon-pencil h5 text-primary float-right" href="#"></a></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" class="align-middle">
+                                                <div class="d-flex">
+                                                    <a class="iconsminds-up---down h6 mt-1 mb-0" href="#"></a>
+                                                    <div class="">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="customCheckThis6" data-toggle="modal" data-target=".bd-example-modal-lg_1">
+                                                            <label class="custom-control-label" for="customCheckThis6"></label>
+                                                        </div>
+                                                    </div>
+                                                    <a class="offset-3" href="#">000012</a>
+                                                </div>
+                                            </th>
+                                            <td></td>
+                                            <td class="bg-danger"></td>
+                                            <td><a class="simple-icon-pencil h5 text-primary float-right" href="#"></a></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>   
+                                </div>
+                             </div>
+                            </div>
+                            <div class="modal modal_pos fade bd-example-modal-lg_1" data-backdrop="false" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header p-2">
+                                            <h5 class="modal-title">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>  
                     </div>
