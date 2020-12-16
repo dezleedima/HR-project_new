@@ -6601,7 +6601,7 @@ footer.page-footer {
       padding-left: 0; } }
 .modal_pos {
   position: absolute;
-  top: 500px;
+  top: 550px;
   left: 0;
   z-index: 10040;
   overflow: auto;
