@@ -6607,3 +6607,6 @@ footer.page-footer {
   overflow: auto;
   overflow-y: auto;
 }
+.modal_size_del {
+  width: 430px;
+}
