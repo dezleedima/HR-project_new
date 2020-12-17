@@ -6603,10 +6603,17 @@ footer.page-footer {
   position: absolute;
   top: 550px;
   left: 0;
+  bottom: 00px;
   z-index: 10040;
   overflow: auto;
   overflow-y: auto;
 }
 .modal_size_del {
   width: 430px;
+}
+.modal_size_save {
+  width: 530px;
+}
+.modal_size_post {
+  width: 600px;
 }
