@@ -296,13 +296,19 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="Pages.Auth.Register.html">
+                                    <a href="Doc.Recruitment.html">
+                                        <i class="simple-icon-user-follow"></i> <span
+                                            class="d-inline-block">Док. приема<br>на работу</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Doc.For.Staff.Movement.html">
                                         <i class="simple-icon-user-follow"></i> <span
                                             class="d-inline-block">Испытательный<br>период</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="Doc.For.Staff.Movement.html">
+                                    <a href="Pages.Auth.ForgotPassword.html">
                                         <i class="simple-icon-user-unfollow"></i> <span class="d-inline-block">
                                             Кадровое<br>перемещение</span>
                                     </a>
@@ -579,6 +585,7 @@
                                         <i class="simple-icon-check"></i> <span class="d-inline-block">Документ вед. зп.</span>
                                     </a>
                                 </li>
+                                <li>
                                     <a href="Ui.Forms.Wizard.html">
                                         <i class="simple-icon-magic-wand"></i> <span
                                             class="d-inline-block">Документ <br>выдачи зарплаты</span>
@@ -701,79 +708,400 @@
                     <div class="w-100 d-inline-block text-center">
                         <p class="col-4 offset-4 text-primary h4 mb-2"><strong>ДОКУМЕНТЫ ВЕДОМОСТИ ЗП</strong></p>
                     </div>
-                    <div class="row justify-content-between align-items-center">
-                        <div class="col-2">
-                            <a class="iconsminds-folder-add-- h4 text-primary" data-toggle="tooltip"
-                            data-placement="bottom" title="Добавить" href="#"></a>
-                            <a class="iconsminds-folders h4 text-primary mx-1" data-toggle="tooltip"
-                            data-placement="bottom" title="Скопировать" href="#"></a>
-                            <a class="iconsminds-folder-edit h4 text-primary" data-toggle="tooltip"
-                            data-placement="bottom" title="Редактировать" href="#"></a>
-                            <a class="iconsminds-folder-close h4 text-primary pl-1" data-toggle="tooltip"
-                            data-placement="bottom" title="Удалить" href="#"></a>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <div class="d-inline-block">
+                                <a class="iconsminds-add h4 text-primary ml-2" data-toggle="tooltip"
+                                data-placement="bottom" title="Создать документ" href="Doc.Bill.PayRoll.html"></a>
+                            </div>
+                           
                         </div>
-                        <div class="col-3">
-                            <form class="form-inline form-row">
-                                <input type="text" class="form-control form-control-lg col" placeholder="Поиск">
-                            </form>
-                        </div>               
+                    <div>
+                        <div class="d-inline" data-toggle="tooltip" data-placement="bottom" title="Поиск документа">
+                            <a class="iconsminds-magnifi-glass h4 text-primary" data-toggle="collapse" href="#collapseExample123"
+                            role="button" aria-expanded="true" aria-controls="collapseExample123"></a>
+                            
+                        </div>
+                        <div class="btn-group dropleft mr-2" data-toggle="tooltip" data-placement="bottom" title="Отображение">
+                                <a href="#" class="h4 simple-icon-eye text-primary" type="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                </a>
+                                <div class="dropdown-menu">
+                                    <div class="my-1 ml-2">
+                                        <div class="form-check dropdown-item ml-3">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck11">
+                                            <label class="form-check-label" for="defaultCheck11">
+                                              Отобразить Номер
+                                            </label>
+                                        </div>
+                                        <div class="form-check dropdown-item ml-3">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck11">
+                                            <label class="form-check-label" for="defaultCheck11">
+                                              Отобразить Дату
+                                            </label>
+                                        </div>
+                                        <div class="form-check dropdown-item ml-3">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck11">
+                                            <label class="form-check-label" for="defaultCheck11">
+                                              Отобразить Месяц начисления
+                                            </label>
+                                        </div>
+                                        <div class="form-check dropdown-item ml-3">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck11">
+                                            <label class="form-check-label" for="defaultCheck11">
+                                              Отобразить Способ выплат
+                                            </label>
+                                        </div>
+                                        <div class="form-check dropdown-item ml-3">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck11">
+                                            <label class="form-check-label" for="defaultCheck11">
+                                              Отобразить Состояние выплат
+                                            </label>
+                                        </div>
+                                        <div class="form-check dropdown-item ml-3">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck11">
+                                            <label class="form-check-label" for="defaultCheck11">
+                                              Отобразить ПФ/НДФЛ/ЗП (%)
+                                            </label>
+                                        </div>
+                                        <div class="form-check dropdown-item ml-3">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck11">
+                                            <label class="form-check-label" for="defaultCheck11">
+                                              Отобразить Комментарий
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>  
+                        </div>   
+                        <div class="btn-group dropleft mr-2" data-toggle="tooltip" data-placement="bottom" title="Настройки">
+                                <a href="#" class="h4 simple-icon-settings text-primary" type="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                </a>
+                                <div class="dropdown-menu">
+                                    <div class="my-1 ml-2">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio123" name="customRadio"
+                                                class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadio123">По группам</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio213" name="customRadio"
+                                                class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadio213">Объединенное</label>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>                               
+                        </div>
                     </div>
+                    <div class="collapse" id="collapseExample123">
+                        <div class="row p-1 mt-2">
+                            <div class="col-2">
+                                <form class="form-inline form-row">
+                                    <input type="text" class="form-control form-control-lg col" placeholder="Поиск по номеру">
+                                </form>
+                            </div> 
+                            <div class="col-2">
+                                <div class="dropdown d-inline-block">
+                                    <button class="btn btn-outline-primary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton123" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Поиск по дате
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton123" style="width:250px;">
+                                        <div class="form-group mb-1 p-2">
+                                            <label>Выбор диапазона времени</label>
+                                            <div class="input-daterange input-group" id="datepicker">
+                                                <input type="text" class="input-sm form-control" name="start"
+                                                    placeholder="От"/>
+                                                <span class="input-group-addon"></span>
+                                                <input type="text" class="input-sm form-control" name="end"
+                                                    placeholder="До"/>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-around">
+                                            <button type="button" class="btn btn-outline-primary btn-sm py-1">Очистить</button>
+                                            <button type="button" class="btn btn-outline-primary btn-sm py-1">Поиск</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>    
+                        </div>
+                   </div>
                     <div class="card w-100 p-2 mt-2" style="height: 550px;">
-                        <div class="card-body p-0">
-                            <table class="table">
-                                <thead class="thead-light text-center">
-                                    <tr>
-                                        <th scope="col" class="text-left"></th>
-                                        <th scope="col">Номер</th>
-                                        <th scope="col">Дата</th>
-                                        <th scope="col">Месяц начисления</th>
-                                        <th scope="col">Способ выплат</th>
-                                        <th scope="col">Состояние выплат</th>
-                                        <th scope="col">ПФ/НДФЛ/ЗП (%)</th>
-                                        <th scope="col">Комментарии</th>
-                                    </tr>
+                        <div class="card-body p-0 overflow-auto">
+                            <table class="table table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th class="bg-light py-2">
+                                        <div class="d-inline">
+                                        <a class="simple-icon-arrow-down h6 text-primary" data-toggle="collapse" href="#collapseExample111"
+                                        role="button" aria-expanded="true" aria-controls="collapseExample111"></a>
+                                        </div><h5 class="d-inline ml-3">Проведенные</h5>
+                                    </th>
+                                  </tr>
                                 </thead>
-                                <tbody>
-                                    <tr class="text-center align-items-center">
-                                        <th scope="row" class="text-left simple-icon-check h6 text-primary"></th>
-                                        <td ><a class="align-items-center" href="Doc.Bill.PayRoll.html">000001</a></td>
-                                        <td>01/01/2020</td>
-                                        <td>Июль</td>
-                                        <td>Через кассу</td>
-                                        <td>Полностью</td>
-                                        <td>100</td>
-                                    </tr>
-                                    <tr class="text-center">
-                                        <th scope="row"class="text-left simple-icon-close h6 text-primary"></th>
-                                        <td ><a class="align-items-center" href="Doc.Bill.PayRoll.html">000002</a></td>
-                                        <td>01/01/2020</td>
-                                        <td>Июнь</td>
-                                        <td>Через банк</td>
-                                        <td>Частично</td>
-                                        <td>38/100/38</td>
-                                    </tr>
-                                    <tr class="text-center">
-                                        <th scope="row"class="text-left simple-icon-minus h6 text-primary"></th>
-                                        <td ><a class="align-items-center" href="Doc.Bill.PayRoll.html">000003</a></td>
-                                        <td>01/01/2020</td>
-                                        <td>Август</td>
-                                        <td>Через банк</td>
-                                        <td>Полностью</td>
-                                        <td>100</td>
-                                    </tr>
-                                  
-                                </tbody>
-                            </table>
+                              </table>
+                              <div class="collapse" id="collapseExample111">
+                                <div class="">
+                                    <table class="table table-bordered table-sm">
+                                        <thead class="text-center">
+                                          <tr>
+                                            <th scope="col" class="w-15 align-middle">Номер</th>
+                                            <th scope="col" class="w-10 align-middle">Дата</th>
+                                            <th scope="col" class="w-10 align-middle">Месяц начисления</th>
+                                            <th scope="col" class="w-10 align-middle">Способ выплат</th>
+                                            <th scope="col" class="w-10 align-middle">Состояние выплат</th>
+                                            <th scope="col" class="w-10 align-middle">ПФ/НДФЛ/ЗП (%)</th>
+                                            <th scope="col" class="w-30 align-middle">Комментарии</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row" class="align-middle">
+                                                    <div class="d-flex align-items-center">
+                                                        <a class="iconsminds-up---down h6 mt-1 mb-0" href="#"></a>
+                                                        <div class="">
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="customCheckThis1" data-toggle="modal" data-target=".bd-example-modal-lg_3">
+                                                                <label class="custom-control-label" for="customCheckThis1"></label>
+                                                            </div>
+                                                        </div>
+                                                        <a class="offset-2" href="#">000001</a>
+                                                    </div>   
+                                                </th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><a class="simple-icon-pencil h5 text-primary float-right" href="#"></a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="align-middle">
+                                                    <div class="d-flex align-items-center">
+                                                        <a class="iconsminds-up---down h6 mt-1 mb-0" href="#"></a>
+                                                        <div class="">
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="customCheckThis2" data-toggle="modal" data-target=".bd-example-modal-lg_3">
+                                                                <label class="custom-control-label" for="customCheckThis2"></label>
+                                                            </div>
+                                                        </div>
+                                                        <a class="offset-2" href="#">000002</a>
+                                                    </div>
+                                                </th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><a class="simple-icon-pencil h5 text-primary float-right" href="#"></a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>   
+                                </div>
+                             </div>
+                             <table class="table table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th class="bg-light py-2">
+                                        <div class="d-inline">
+                                        <a class="simple-icon-arrow-down h6 text-primary" data-toggle="collapse" href="#collapseExample222"
+                                        role="button" aria-expanded="true" aria-controls="collapseExample222"></a>
+                                        </div><h5 class="d-inline ml-3">Сохраненные</h5>
+                                    </th>
+                                  </tr>
+                                </thead>
+                              </table>
+                              <div class="collapse" id="collapseExample222">
+                                <div class="">
+                                    <table class="table table-bordered table-sm">
+                                        <thead class="text-center">
+                                            <tr>
+                                              <th scope="col" class="w-15 align-middle">Номер</th>
+                                              <th scope="col" class="w-10 align-middle">Дата</th>
+                                              <th scope="col" class="w-10 align-middle">Месяц начисления</th>
+                                              <th scope="col" class="w-10 align-middle">Способ выплат</th>
+                                              <th scope="col" class="w-10 align-middle">Состояние выплат</th>
+                                              <th scope="col" class="w-10 align-middle">ПФ/НДФЛ/ЗП (%)</th>
+                                              <th scope="col" class="w-30 align-middle">Комментарии</th>
+                                            </tr>
+                                          </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row" class="align-middle">
+                                                <div class="d-flex align-items-center">
+                                                    <a class="iconsminds-up---down h6 mt-1 mb-0" href="#"></a>
+                                                    <div class="">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="customCheckThis3" data-toggle="modal" data-target=".bd-example-modal-lg_2">
+                                                            <label class="custom-control-label" for="customCheckThis3"></label>
+                                                        </div>
+                                                    </div>
+                                                    <a class="offset-2" href="#">000003</a>
+                                                </div>   
+                                            </th>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><a class="simple-icon-pencil h5 text-primary float-right" href="#"></a></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" class="align-middle">
+                                                <div class="d-flex align-items-center">
+                                                    <a class="iconsminds-up---down h6 mt-1 mb-0" href="#"></a>
+                                                    <div class="">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="customCheckThis4" data-toggle="modal" data-target=".bd-example-modal-lg_2">
+                                                            <label class="custom-control-label" for="customCheckThis4"></label>
+                                                        </div>
+                                                    </div>
+                                                    <a class="offset-2" href="#">000004</a>
+                                                </div>
+                                            </th>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><a class="simple-icon-pencil h5 text-primary float-right" href="#"></a></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>   
+                                </div>
+                             </div>
+                             <table class="table table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th class="bg-light py-2">
+                                        <div class="d-inline">
+                                        <a class="simple-icon-arrow-down h6 text-primary" data-toggle="collapse" href="#collapseExample333"
+                                        role="button" aria-expanded="true" aria-controls="collapseExample333"></a>
+                                        </div><h5 class="d-inline ml-3">Удаленые</h5>
+                                    </th>
+                                  </tr>
+                                </thead>
+                              </table>
+                              <div class="collapse" id="collapseExample333">
+                                <div class="">
+                                    <table class="table table-bordered table-sm">
+                                        <thead class="text-center">
+                                            <tr>
+                                              <th scope="col" class="w-15 align-middle">Номер</th>
+                                              <th scope="col" class="w-10 align-middle">Дата</th>
+                                              <th scope="col" class="w-10 align-middle">Месяц начисления</th>
+                                              <th scope="col" class="w-10 align-middle">Способ выплат</th>
+                                              <th scope="col" class="w-10 align-middle">Состояние выплат</th>
+                                              <th scope="col" class="w-10 align-middle">ПФ/НДФЛ/ЗП (%)</th>
+                                              <th scope="col" class="w-30 align-middle">Комментарии</th>
+                                            </tr>
+                                          </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row" class="align-middle">
+                                                <div class="d-flex align-items-center">
+                                                    <a class="iconsminds-up---down h6 mt-1 mb-0" href="#"></a>
+                                                    <div class="">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="customCheckThis5" data-toggle="modal" data-target=".bd-example-modal-lg_1">
+                                                            <label class="custom-control-label" for="customCheckThis5"></label>
+                                                        </div>
+                                                    </div>
+                                                    <a class="offset-2" href="#">000009</a>
+                                                </div>   
+                                            </th>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><a class="simple-icon-pencil h5 text-primary float-right" href="#"></a></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" class="align-middle">
+                                                <div class="d-flex align-items-center">
+                                                    <a class="iconsminds-up---down h6 mt-1 mb-0" href="#"></a>
+                                                    <div class="">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="customCheckThis6" data-toggle="modal" data-target=".bd-example-modal-lg_1">
+                                                            <label class="custom-control-label" for="customCheckThis6"></label>
+                                                        </div>
+                                                    </div>
+                                                    <a class="offset-2" href="#">000012</a>
+                                                </div>
+                                            </th>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><a class="simple-icon-pencil h5 text-primary float-right" href="#"></a></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>   
+                                </div>
+                             </div>
+                            </div>
+                            <div class="modal modal_pos  fade bd-example-modal-lg_3" data-backdrop="false" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal_size_post">
+                                    <div class="modal-content bg-primary rounded-lg">
+                                        <div class="modal-body p-1 rounded">
+                                            <button type="button" class="btn btn-pill btn-light">
+                                                    Отмеченные&nbsp;<span class="badge badge-info">1</span>
+                                            </button>
+                                            <button type="button" class="btn btn-secondary default">Отменить</button>
+                                            <button type="button" class="btn btn-secondary default">Удалить</button>
+                                            <button type="button" class="btn btn-secondary default">Копировать</button>
+                                            <button type="button" class="btn btn-secondary default">Назначить</button>
+                                            <button type="button" class="close text-white p-1" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal modal_pos  fade bd-example-modal-lg_2" data-backdrop="false" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal_size_save">
+                                    <div class="modal-content bg-primary rounded-lg">
+                                        <div class="modal-body p-1 rounded">
+                                            <button type="button" class="btn btn-pill btn-light">
+                                                    Отмеченные&nbsp;<span class="badge badge-info">1</span>
+                                            </button>
+                                            <button type="button" class="btn btn-secondary default">Провести</button>
+                                            <button type="button" class="btn btn-secondary default">Удалить</button>
+                                            <button type="button" class="btn btn-secondary default">Копировать</button>
+                                            <button type="button" class="close text-white p-1" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal modal_pos fade bd-example-modal-lg_1" data-backdrop="false" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal_size_del">
+                                    <div class="modal-content bg-primary rounded-lg">
+                                        <div class="modal-body p-1 rounded">
+                                            <button type="button" class="btn btn-pill btn-light">
+                                                    Отмеченные&nbsp;<span class="badge badge-info">1</span>
+                                            </button>
+                                            <button type="button" class="btn btn-secondary default">Отменить</button>
+                                            <button type="button" class="btn btn-secondary default">Удалить навсегда</button>
+                                            <button type="button" class="close text-white p-1" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>  
                     </div>
                 </div>
             </div>
         </div>
      </main>
-
-       
-   
-
     
     <footer class="page-footer">
         <div class="footer-content">
