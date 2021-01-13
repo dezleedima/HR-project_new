@@ -833,10 +833,22 @@
                                         <td class="py-2"></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="3" class="py-2 text-center"><button type="button" class="btn btn-secondary btn-sm py-1">Добавить документ</button></td>
+                                        <td colspan="3" class="py-2 text-center"><button type="button" class="btn btn-secondary btn-sm py-1" data-toggle="modal"
+                                            data-target=".bd-example-modal-sm1">Добавить документ</button></td>
                                     </tr>
                                 </tbody>
                             </table>
+                            <div class="modal fade bd-example-modal-sm1" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog  modal-sm modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <h5 class="h5 text-center">Документы по зарплате</h5>
                             <table class="table table-bordered shadow-sm table-light">
                                 <thead>
