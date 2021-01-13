@@ -703,10 +703,10 @@
                             <button type="button" class="btn btn-secondary d-block py-1 mb-3" data-toggle="modal" data-backdrop="static" data-target="#exampleModalRight">Регистрация нового сотрудника</button>
                         </div>
                         <div class="col-4">
-                            <h5 class="h5 text-center">Документы по сотруднику</h5>
+                            <h5 class="h5 text-center">Данные по сотруднику</h5>
                         </div>
                         <div class="col-4">
-                            <h5 class="h5 text-center">Справки по сотруднику</h5>
+                            <h5 class="h5 text-center">Кадровые Документы</h5>
                         </div>
                     </div>
                     <div class="col-12 d-flex">
@@ -732,34 +732,6 @@
                         </div>
                         <div class="col-4">
                             <table class="table table-bordered shadow-sm table-light">
-                                <thead>
-                                    <th class="w-25 py-2 text-center">Дата</th>
-                                    <th class="w-50 py-2 text-center">Документ</th>
-                                    <th class="w-25 py-2 text-center">Номер</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="py-2"></td>
-                                        <td class="py-2"><a href="#">Принятие на работу</a></td>
-                                        <td class="py-2"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-2"></td>
-                                        <td class="py-2"><a href="#">Начисление зарплаты</a></td>
-                                        <td class="py-2"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-2"></td>
-                                        <td class="py-2"><a href="#">Док</a></td>
-                                        <td class="py-2"></td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="3" class="py-2 text-center"><button type="button" class="btn btn-secondary btn-sm py-1">Добавить документ</button></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <h5 class="h5 text-center">Данные по сотруднику</h5>
-                            <table class="table table-bordered shadow-sm table-light">
                                 <tbody>
                                     <tr>
                                         <td class="w-30 py-2 text-right"><u>ИНН:</u></td>
@@ -783,42 +755,118 @@
                                     </tr>
                                 </tbody>
                             </table>
+                            <h5 class="h5 text-center">Справки по сотруднику</h5>
+                                <table class="table table-bordered shadow-sm table-light">
+                                    <thead>
+                                        <th class="w-40 py-2 text-center">Обязательные</th>
+                                        <th class="w-60 py-2 text-center">Необязательные</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class=" py-2">
+                                                <div class="form-check form-check-inline">
+                                                <input type="checkbox" class="form-check-input" >
+                                            </div>
+                                            <a href="#"><u>Наркологический</u></a>
+                                            </td>
+                                            <td class=" py-2"><a href="#"><u>О работе</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class=" py-2"><div class="form-check form-check-inline">
+                                                <input class="form-check-input position-static" type="checkbox">
+                                            </div>
+                                            <a href="#"><u>Судимость</u></a>
+                                            </td>
+                                            <td class=" py-2"><a href="#"><u>О зарплате</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class=" py-2"><div class="form-check form-check-inline">
+                                                <input class="form-check-input position-static" type="checkbox">
+                                            </div>
+                                            <a href="#"><u>Здоровье</u></a>
+                                            </td>
+                                            <td class="py-2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-2 text-center"><button type="button" class="btn btn-secondary btn-sm py-1">Добавить справку</button></td>
+                                            <td class="py-2 text-center"><button type="button" class="btn btn-secondary btn-sm py-1">Добавить свободный шаблон</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                         </div>
                         <div class="col-4">
                             <table class="table table-bordered shadow-sm table-light">
                                 <thead>
-                                    <th class="w-40 py-2 text-center">Обязательные</th>
-                                    <th class="w-60 py-2 text-center">Необязательные</th>
+                                    <th class="w-25 py-2 text-center">Дата</th>
+                                    <th class="w-50 py-2 text-center">Документ</th>
+                                    <th class="w-25 py-2 text-center">Номер</th>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class=" py-2">
-                                            <div class="form-check form-check-inline">
-                                            <input type="checkbox" class="form-check-input" >
-                                          </div>
-                                          <a href="#"><u>Наркологический</u></a>
-                                        </td>
-                                        <td class=" py-2"><a href="#"><u>О работе</u></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class=" py-2"><div class="form-check form-check-inline">
-                                            <input class="form-check-input position-static" type="checkbox">
-                                          </div>
-                                          <a href="#"><u>Судимость</u></a>
-                                        </td>
-                                        <td class=" py-2"><a href="#"><u>О зарплате</u></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class=" py-2"><div class="form-check form-check-inline">
-                                            <input class="form-check-input position-static" type="checkbox">
-                                          </div>
-                                          <a href="#"><u>Здоровье</u></a>
-                                        </td>
+                                        <td class="py-2"></td>
+                                        <td class="py-2"><a href="#">Принятие на работу</a></td>
                                         <td class="py-2"></td>
                                     </tr>
                                     <tr>
-                                        <td class="py-2 text-center"><button type="button" class="btn btn-secondary btn-sm py-1">Добавить справку</button></td>
-                                        <td class="py-2 text-center"><button type="button" class="btn btn-secondary btn-sm py-1">Добавить свободный шаблон</button></td>
+                                        <td class="py-2"></td>
+                                        <td class="py-2"><a href="#">Начисление зарплаты</a></td>
+                                        <td class="py-2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2"></td>
+                                        <td class="py-2"><a href="#">Док</a></td>
+                                        <td class="py-2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2"></td>
+                                        <td class="py-2"><a href="#">Док</a></td>
+                                        <td class="py-2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2"></td>
+                                        <td class="py-2"><a href="#">Док</a></td>
+                                        <td class="py-2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2"></td>
+                                        <td class="py-2"><a href="#">Док</a></td>
+                                        <td class="py-2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="py-2 text-center"><button type="button" class="btn btn-secondary btn-sm py-1">Добавить документ</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h5 class="h5 text-center">Документы по зарплате</h5>
+                            <table class="table table-bordered shadow-sm table-light">
+                                <thead>
+                                    <th class="w-25 py-2 text-center">Дата</th>
+                                    <th class="w-50 py-2 text-center">Документ</th>
+                                    <th class="w-25 py-2 text-center">Номер</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="py-2"></td>
+                                        <td class="py-2"><a href="#">Принятие на работу</a></td>
+                                        <td class="py-2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2"></td>
+                                        <td class="py-2"><a href="#">Начисление зарплаты</a></td>
+                                        <td class="py-2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2"></td>
+                                        <td class="py-2"><a href="#">Док</a></td>
+                                        <td class="py-2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2"></td>
+                                        <td class="py-2"><a href="#">Док</a></td>
+                                        <td class="py-2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="py-2 text-center"><button type="button" class="btn btn-secondary btn-sm py-1">Добавить документ</button></td>
                                     </tr>
                                 </tbody>
                             </table>
