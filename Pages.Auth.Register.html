@@ -12,46 +12,71 @@
     <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
     <link rel="stylesheet" href="css/vendor/bootstrap.rtl.only.min.css" />
     <link rel="stylesheet" href="css/vendor/bootstrap-float-label.min.css" />
+    <link rel="stylesheet" href="css/vendor/select2.min.css" />
+    <link rel="stylesheet" href="css/vendor/select2-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/vendor/bootstrap-datepicker3.min.css" />
+    <link rel="stylesheet" href="css/vendor/bootstrap-tagsinput.css" />
+    <link rel="stylesheet" href="css/vendor/component-custom-switch.min.css" />
+    <link rel="stylesheet" href="css/vendor/perfect-scrollbar.css" />
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
-<body class="background show-spinner no-footer">
-    <div class="fixed-background"></div>
+<body class="show-spinner no-footer">
     <main>
         <div class="container">
             <div class="row h-100">
-                <div class="col-12 col-md-10 mx-auto my-auto">
-                    <div class="card auth-card">
-                        <div class="position-relative image-side ">
-                            <p class=" text-white h2">MAGIC IS IN THE DETAILS</p>
-                            <p class="white mb-0">
-                                Please use this form to register.
-                                <br>If you are a member, please
-                                <a href="#" class="white">login</a>.
-                            </p>
-                        </div>
-                        <div class="form-side">
-                            <a href="Dashboard.Default.html">
-                                <span class="logo-single"></span>
-                            </a>
-                            <h6 class="mb-4">Register</h6>
+                <div class="col-6 mx-auto my-auto">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="mb-4">Top Labels Over Line</h5>
 
                             <form>
-                                <label class="form-group has-float-label mb-4">
+                                <label class="form-group has-float-label">
                                     <input class="form-control" />
-                                    <span>Name</span>
+                                    <span>ИНН</span>
                                 </label>
-                                <label class="form-group has-float-label mb-4">
+
+                                <label class="form-group has-float-label">
+                                    <input class="form-control" />
+                                    <span>Имя</span>
+                                </label>
+
+                                <label class="form-group has-float-label">
+                                    <input class="form-control" />
+                                    <span>Фамилие</span>
+                                </label>
+
+                                <label class="form-group has-float-label">
+                                    <input class="form-control datepicker" placeholder="">
+                                    <span>Дата рождения</span>
+                                </label>
+
+                                <label class="form-group has-float-label">
+                                    <input class="form-control" />
+                                    <span>Адрес</span>
+                                </label>
+
+                                <label class="form-group has-float-label">
+                                    <input class="form-control" />
+                                    <span>Телефон</span>
+                                </label>
+                                
+                                <label class="form-group has-float-label">
                                     <input class="form-control" />
                                     <span>E-mail</span>
                                 </label>
-                                <label class="form-group has-float-label mb-4">
+
+                                <label class="form-group has-float-label">
                                     <input class="form-control" type="password" placeholder="" />
                                     <span>Password</span>
                                 </label>
-                                <div class="d-flex justify-content-end align-items-center">
-                                    <button class="btn btn-primary btn-lg btn-shadow" type="submit">REGISTER</button>
-                                </div>
+
+                                <label class="form-group has-float-label">
+                                    <input class="form-control" />
+                                    <span>Должность</span>
+                                </label>
+
+                                <button class="btn btn-primary" type="submit">Sign up</button>
                             </form>
                         </div>
                     </div>
@@ -61,6 +86,10 @@
     </main>
     <script src="js/vendor/jquery-3.3.1.min.js"></script>
     <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/vendor/perfect-scrollbar.min.js"></script>
+    <script src="js/vendor/select2.full.js"></script>
+    <script src="js/vendor/bootstrap-datepicker.js"></script>
+    <script src="js/vendor/bootstrap-tagsinput.min.js"></script>
     <script src="js/dore.script.js"></script>
     <script src="js/scripts.js"></script>
 </body>
