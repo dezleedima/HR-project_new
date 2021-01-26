@@ -28,55 +28,78 @@
                 <div class="col-6 mx-auto my-auto">
                     <div class="card mb-4">
                         <div class="card-body">
-                            <h5 class="mb-4">Top Labels Over Line</h5>
+                            <h5 class="mb-4">Аппликационная форма</h5>
 
-                            <form>
+                            <form id="exampleFormTopLabels" class="tooltip-right-bottom">
                                 <label class="form-group has-float-label">
-                                    <input class="form-control" />
+                                    <input class="form-control" required name="jQueryTopLabelsinn" />
                                     <span>ИНН</span>
                                 </label>
 
                                 <label class="form-group has-float-label">
-                                    <input class="form-control" />
+                                    <input class="form-control" required name="jQueryTopLabelsname" />
                                     <span>Имя</span>
                                 </label>
 
                                 <label class="form-group has-float-label">
-                                    <input class="form-control" />
+                                    <input class="form-control" required name="jQueryTopLabelssurname" />
                                     <span>Фамилие</span>
                                 </label>
 
                                 <label class="form-group has-float-label">
-                                    <input class="form-control datepicker" placeholder="">
+                                    <input class="form-control datepicker" required name="jQueryTopLabelsDate" />
                                     <span>Дата рождения</span>
                                 </label>
 
                                 <label class="form-group has-float-label">
-                                    <input class="form-control" />
+                                    <input class="form-control" required name="jQueryTopLabelsadr" />
                                     <span>Адрес</span>
                                 </label>
 
                                 <label class="form-group has-float-label">
-                                    <input class="form-control" />
+                                    <input class="form-control" required name="jQueryTopLabelstel" />
                                     <span>Телефон</span>
                                 </label>
                                 
                                 <label class="form-group has-float-label">
-                                    <input class="form-control" />
+                                    <input class="form-control" name="jQueryTopLabelsEmail" required/>
                                     <span>E-mail</span>
                                 </label>
 
                                 <label class="form-group has-float-label">
-                                    <input class="form-control" type="password" placeholder="" />
+                                    <input class="form-control" type="password" name="jQueryTopLabelsPassword"
+                                    required />
                                     <span>Password</span>
                                 </label>
 
                                 <label class="form-group has-float-label">
-                                    <input class="form-control" />
+                                    <input class="form-control" required name="jQueryTopLabelsposition" />
                                     <span>Должность</span>
                                 </label>
 
-                                <button class="btn btn-primary" type="submit">Sign up</button>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Резуме/CV</span>
+                                    </div>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="inputGroupFile01">
+                                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                    </div>
+                                </div>
+
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Доп. документы</span>
+                                    </div>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="inputGroupFile01">
+                                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                    <button class="btn btn-primary py-1" type="submit">Отправить</button>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -90,6 +113,8 @@
     <script src="js/vendor/select2.full.js"></script>
     <script src="js/vendor/bootstrap-datepicker.js"></script>
     <script src="js/vendor/bootstrap-tagsinput.min.js"></script>
+    <script src="js/vendor/jquery.validate/jquery.validate.min.js"></script>
+    <script src="js/vendor/jquery.validate/additional-methods.min.js"></script>
     <script src="js/dore.script.js"></script>
     <script src="js/scripts.js"></script>
 </body>
