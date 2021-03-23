@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/vendor/glide.core.min.css" />
     <link rel="stylesheet" href="css/vendor/bootstrap-stars.css" />
     <link rel="stylesheet" href="css/vendor/nouislider.min.css" />
+    <link rel="stylesheet" href="css/vendor/smart_wizard.min.css" />
     <link rel="stylesheet" href="css/vendor/bootstrap-datepicker3.min.css" />
     <link rel="stylesheet" href="css/vendor/component-custom-switch.min.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -910,46 +911,46 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <!-- <h5 class="h5 text-center">Сотрудники с неполными данными</h5>
-                    <table class="table table-bordered shadow-sm table-light">
-                        <thead>
-                            <th class="w-55 py-2 text-center">Сотрудники</th>
-                            <th class="w-15 py-2 text-center">Телефон</th>
-                            <th class="w-15 py-2 text-center">Почта</th>
-                            <th class="w-15 py-2 text-center">Адрес</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="py-2 text-center"></td>
-                                <td class="py-2 text-center"><div class="form-check form-check-inline">
-                                    <input class="form-check-input position-static" type="checkbox">
-                                  </div></td>
-                                <td class="py-2 text-center"><div class="form-check form-check-inline">
-                                    <input class="form-check-input position-static" type="checkbox">
-                                  </div></td>
-                                <td class="py-2 text-center"><div class="form-check form-check-inline">
-                                    <input class="form-check-input position-static" type="checkbox">
-                                  </div></td>
-                            </tr>
-                            <tr>
-                                <td class="py-2 text-center"></td>
-                            <td class="py-2 text-center"><div class="form-check form-check-inline">
-                                <input class="form-check-input position-static" type="checkbox">
-                              </div></td>
-                            <td class="py-2 text-center"><div class="form-check form-check-inline">
-                                <input class="form-check-input position-static" type="checkbox">
-                              </div></td>
-                            <td class="py-2 text-center"><div class="form-check form-check-inline">
-                                <input class="form-check-input position-static" type="checkbox">
-                              </div></td>
-                            </tr>
-                        </tbody>
-                    </table> -->
+                                <!-- <h5 class="h5 text-center">Сотрудники с неполными данными</h5>
+                                <table class="table table-bordered shadow-sm table-light">
+                                    <thead>
+                                        <th class="w-55 py-2 text-center">Сотрудники</th>
+                                        <th class="w-15 py-2 text-center">Телефон</th>
+                                        <th class="w-15 py-2 text-center">Почта</th>
+                                        <th class="w-15 py-2 text-center">Адрес</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="py-2 text-center"></td>
+                                            <td class="py-2 text-center"><div class="form-check form-check-inline">
+                                                <input class="form-check-input position-static" type="checkbox">
+                                            </div></td>
+                                            <td class="py-2 text-center"><div class="form-check form-check-inline">
+                                                <input class="form-check-input position-static" type="checkbox">
+                                            </div></td>
+                                            <td class="py-2 text-center"><div class="form-check form-check-inline">
+                                                <input class="form-check-input position-static" type="checkbox">
+                                            </div></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-2 text-center"></td>
+                                        <td class="py-2 text-center"><div class="form-check form-check-inline">
+                                            <input class="form-check-input position-static" type="checkbox">
+                                        </div></td>
+                                        <td class="py-2 text-center"><div class="form-check form-check-inline">
+                                            <input class="form-check-input position-static" type="checkbox">
+                                        </div></td>
+                                        <td class="py-2 text-center"><div class="form-check form-check-inline">
+                                            <input class="form-check-input position-static" type="checkbox">
+                                        </div></td>
+                                        </tr>
+                                    </tbody>
+                                </table> -->
                         </div>
                     </div>
                 </div>
              </div>
-              <div class="modal fade modal-right" id="exampleModalRight" tabindex="-1" role="dialog"
+                <div class="modal fade modal-right" id="exampleModalRight" tabindex="-1" role="dialog"
                     aria-labelledby="exampleModalRight" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -960,266 +961,173 @@
                                         <span aria-hidden="true"></span>
                                     </button>
                                 </div>
-                                <p class="text-center text-muted"><em>Данное меню поможет вам быстро и удобно зарегистрировать сотрудника, заполнив 
+                                <p class="text-center text-muted mb-1"><em>Данное меню поможет вам быстро и удобно зарегистрировать сотрудника, заполнив 
                                     самые необходимые данные</em></p>
-                                    <ul class="nav nav-pills mb-3 w-100" id="pills-tab" role="tablist">
-                                        <li class="nav-item" role="presentation">
-                                          <a class="nav-link active text-center h6" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Основные <br>
-                                            данные</a>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                          <a class="nav-link text-center h6" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Контактная <br>
-                                            информация</a>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                          <a class="nav-link text-center h6" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Условие <br>
-                                            договора</a>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <a class="nav-link text-center h6" id="pills-extrainfo-tab" data-toggle="pill" href="#pills-extrainfo" role="tab" aria-controls="pills-extrainfo" aria-selected="false">Дополнительная<br>
-                                                информация</a>
-                                          </li>
-                                          <li class="nav-item" role="presentation">
-                                            <a class="nav-link text-center h6" id="pills-totalinfo-tab" data-toggle="pill" href="#pills-totalinfo" role="tab" aria-controls="pills-totalinfo" aria-selected="false">Итог и<br>
-                                                завершение</a>
-                                          </li>
-                                      </ul>
-                                      
-                               
                             </div>
-                            <div class="modal-body">
-                                <div class="tab-content" id="pills-tabContent">
-                                    <div class="tab-pane fade show active" id="pills-home"  role="tabpanel" aria-labelledby="pills-home-tab">
-                                        <div class="btn-group float-right">
-                                            <a href="#" class="h5 simple-icon-settings" type="button"
-                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            </a>
-                                            <div class="dropdown-menu">
-                                                <div class="form-check dropdown-item ml-3">
-                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck11">
-                                                    <label class="form-check-label" for="defaultCheck11">
-                                                      Отобразить "Отчество"
-                                                    </label></div>
-                                                    <div class="form-check dropdown-item ml-3">
-                                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck12">
-                                                        <label class="form-check-label" for="defaultCheck12">
-                                                            Отобразить "Номер паспорта"
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check dropdown-item ml-3">
-                                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck13">
-                                                        <label class="form-check-label" for="defaultCheck13">
-                                                            Отобразить "Гражданство"
-                                                        </label>
+                                <div class="modal-body pt-1">
+                                    <div class="col-12 mb-4">
+                                        <div id="smartWizardValidation">
+                                            <ul class="card-header">
+                                                <li><a href="#step-0">ШАГ 1<br />Основные<br> данные</a></li>
+                                                <li><a href="#step-1">ШАГ 2<br />Контактная<br> информация</a></li>
+                                                <li><a href="#step-2">ШАГ 3<br />Условие <br>договора</a></li>
+                                                <li><a href="#step-3">ШАГ 4<br />Дополнительная <br> информация</a></li>
+                                                <li><a href="#step-4">ШАГ 5<br />Итог и <br>завершение</a></li>
+                                            </ul>
+                
+                                            <div class="">
+                                                <div id="step-0">
+                                                    <h2 class="text-center my-3"><strong>Личная информация</strong></h2>
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <form id="form-step-0" class="tooltip-label-right" novalidate>
+                                                                <div class="form-group position-relative error-l-35">
+                                                                    <label for="name">ИНН:</label>
+                                                                    <div class="d-flex">
+                                                                        <input type="text" class="form-control" name="INNValidation"
+                                                                        id="INNValidation" required>
+                                                                    <a class="col-sm-2" href="#"><i class="h5 simple-icon-cloud-download"></i></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group position-relative error-l-35">
+                                                                    <label for="lastName">Имя:</label>
+                                                                    <input type="text" class="form-control" name="NameValidation"
+                                                                        id="NameValidation" required>
+                                                                </div>
+                                                                <div class="form-group position-relative error-l-75">
+                                                                    <label for="lastName">Фамилие:</label>
+                                                                    <input type="text" class="form-control" name="lastNameValidation"
+                                                                        id="lastNameValidation" required>
+                                                                </div>
+                                                                <div class="form-group position-relative error-l-75">
+                                                                    <label for="lastName">Отчество:</label>
+                                                                    <input type="text" class="form-control" name="fNameValidation"
+                                                                        id="fNameValidation">
+                                                                </div>
+                                                                <div class="form-group position-relative error-l-75">
+                                                                    <label for="lastName">Номер паспорта:</label>
+                                                                    <input type="text" class="form-control" name="pasnumberValidation"
+                                                                        id="pasnumberValidation">
+                                                                </div>
+                                                                <div class="form-group position-relative error-l-100">
+                                                                    <label for="lastName">Дата рождения:</label>
+                                                                    <input type="text" class="form-control" name="birthValidation"
+                                                                        id="birthValidation" required>
+                                                                </div>
+                                                                <div class="form-group position-relative error-l-75">
+                                                                    <label for="lastName">Гражданство:</label>
+                                                                    <input type="text" class="form-control" name="cityzenValidation"
+                                                                        id="cityzenValidation">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col-4 text-center">
+                                                            <div class="card bg-light" style="height: 250px;">
+                                                                    <img class="" src="" alt="">
+                                                            </div>
+                                                            <label class="btn btn-success btn-sm py-1 my-2 btn-upload" for="inputImage"
+                                                                title="Upload image file">
+                                                                <input type="file" class="sr-only" id="inputImage" name="file"
+                                                                    accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff">Привязать
+                                                            </label>
+                                                            <button type="button" class="btn btn-dark btn-sm py-1">Открепить</button>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                             <h2 class="text-center mb-5"><strong>Личная информация</strong></h2>
-                                            <div class="row">
-                                                <div class="col-8">
-                                                    <form id="exampleFormTopLabels" class="tooltip-right-bottom">
-                                                        <div class="form-group has-float-label d-flex">
-                                                            <input class="form-control col-10" type="text" name="jQueryTopLabels1" required />
-                                                            <span>ИНН</span>
-                                                            <a class="col-2" href="#"><i class="h5 simple-icon-cloud-download"></i></a>
-                                                        </div>
-                                                        <div class="form-group has-float-label">
-                                                            <input class="form-control" type="text" name="jQueryTopLabels2" required />
-                                                            <span>Имя</span>
-                                                        </div>
-                                                        <button class="btn btn-primary" type="submit">Sign up</button>
-                                                    </form>
-                                                    <form>
-                                                        <div class="form-group row">
-                                                            <label for="inputINN" class="col-sm-4 col-form-label">ИНН:</label>
-                                                            <div class="col-sm-6">
-                                                            <input type="text" class="form-control form-control-sm" id="inputINN">
-                                                            </div>
-                                                            <a class="col-sm-2" href="#"><i class="h5 simple-icon-cloud-download"></i></a>
-                                                        </div>
-                                                        <div class="form-group row ">
-                                                            <label for="inputname" class="col-sm-4 col-form-label">Имя:</label>
-                                                            <div class="col-sm-8">
-                                                            <input type="text" class="form-control form-control-sm" id="inputname">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row ">
-                                                            <label for="inputsurname" class="col-sm-4 col-form-label">Фамилие:</label>
-                                                            <div class="col-sm-8">
-                                                            <input type="text" class="form-control form-control-sm" id="inputsurname">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row ">
-                                                            <label for="inputfname" class="col-sm-4 col-form-label">Очество:</label>
-                                                            <div class="col-sm-8">
-                                                            <input type="text" class="form-control form-control-sm" id="inpuftname">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row ">
-                                                            <label for="inputpasnumber" class="col-sm-4 col-form-label">Номер паспорта:</label>
-                                                            <div class="col-sm-8">
-                                                            <input type="text" class="form-control form-control-sm" id="inputpasnumber">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row ">
-                                                            <label for="inputbirth" class="col-sm-4 col-form-label">Дата рождения:</label>
-                                                            <div class="col-sm-8">
-                                                            <input type="text" class="form-control form-control-sm" id="inputbirth">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row ">
-                                                            <label for="inputcityzen" class="col-sm-4 col-form-label">Гражданство:</label>
-                                                            <div class="col-sm-8">
-                                                            <input type="text" class="form-control form-control-sm" id="inputcityzen">
-                                                            </div>
-                                                        </div>
-                                                        <!-- <div class="form-group row ">
-                                                            <label for="inputGroupFile01" class="col-sm-4 col-form-label">Resume/CV:</label>
-                                                            <div class="col-sm-8">
-                                                                <div class="custom-file">
-                                                                    <input type="file" class="custom-file-input" id="inputGroupFile01">
-                                                                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                                <div id="step-1">
+                                                    <div class="text-center">
+                                                        <h2 class=" my-3 d-inline-block "><strong>Контактные данные</strong></h2>
+                                                    <button type="button" class="h5 btn simple-icon-question p-1" data-toggle="tooltip" data-placement="bottom" title="Необходимо заполнить одну строку телефона и одну строку адреса"></button>
+                                                    </div>
+                                                        <form id="form-step-1" class="tooltip-label-right" novalidate>
+                                                            <div class="form-group position-relative error-l-75">
+                                                                <label for="lastName">Телефон:</label>
+                                                                <div class="d-flex">
+                                                                    <input type="text" class="form-control col-sm-5" name="telValidation"
+                                                                    id="telValidation" required>
+                                                                    <select class="col-sm-3 offset-sm-1 form-control required">
+                                                                        <option></option>
+                                                                        <option>Мобильный</option>
+                                                                        <option>Домашний</option>
+                                                                    </select>
                                                                 </div>
                                                             </div>
-                                                        </div> -->
-                                                    </form>
-                                                </div>
-                                                <div class="col-4 text-center">
-                                                <div class="card bg-light" style="height: 250px;">
-                                                        <img class="" src="" alt="">
-                                                </div>
-                                                <label class="btn btn-success btn-sm py-1 my-2 btn-upload" for="inputImage"
-                                                    title="Upload image file">
-                                                    <input type="file" class="sr-only" id="inputImage" name="file"
-                                                        accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff">Привязать
-                                                </label>
-                                                    <button type="button" class="btn btn-dark btn-sm py-1">Открепить</button>
-                                                </div>
-                                            </div>
-                                            
-                                         </div>
-                                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                        <div class="text-center">
-                                            <h2 class=" mb-5 d-inline-block "><strong>Контактные данные</strong></h2>
-                                        <button type="button" class="h5 btn simple-icon-question p-1" data-toggle="tooltip" data-placement="bottom" title="Необходимо заполнить одну строку телефона и одну строку адреса"></button>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="form-group row ">
-                                                    <label for="inputname" class="col-sm-2 col-form-label">Телефон:</label>
-                                                    <div class="col-sm-2">
-                                                      <input type="text" class="form-control form-control-sm" id="inputname">
-                                                    </div>
-                                                    <input type="text" class="col-sm-3 form-control form-control-sm">
-                                                    <select class="col-sm-3 offset-sm-1 form-control form-control-sm">
-                                                        <option></option>
-                                                        <option>Мобильный</option>
-                                                        <option>Домашний</option>
-                                                      </select>
-                                                </div>
-                                                <div class="form-group row ">
-                                                    <label for="inputname" class="col-sm-2 col-form-label">Эл. почта:</label>
-                                                    <div class="col-sm-6">
-                                                      <input type="text" class="form-control form-control-sm" id="inputname">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row ">
-                                                    <label for="inputname" class="col-sm-2 col-form-label">Адрес:</label>
-                                                    <div class="col-sm-6">
-                                                      <input type="text" class="form-control form-control-sm" id="inputname">
-                                                    </div>
-                                                    <select class="col-3 form-control form-control-sm">
-                                                        <option></option>
-                                                        <option>Фактический</option>
-                                                        <option>Юридический</option>
-                                                      </select>
-                                                </div>
-                                                <div class="h5 simple-icon-plus ml-3"></div>
-                                                <div class="card mb-4">
-                                                    <div class="card-body p-2">
-                                                        <h5 class="mb-2">Загруженные файлы</h5>
-                                                        <form action="/file-upload">
-                                                            <div class="dropzone">
+                                                            <div class="form-group position-relative error-l-75">
+                                                                <label for="email">Эл. почта:</label>
+                                                                <input type="email" class="form-control col-sm-5" name="emailValidation"
+                                                                    id="emailValidation" required>
+                                                            </div>
+                                                            <div class="form-group position-relative error-l-60">
+                                                                <label for="lastName">Адрес:</label>
+                                                                <div class="d-flex">
+                                                                    <input type="text" class="form-control col-sm-5" name="adrValidation"
+                                                                    id="adrValidation" required>
+                                                                    <select class="col-sm-3 offset-sm-1 form-control" required>
+                                                                        <option></option>
+                                                                        <option>Фактический</option>
+                                                                        <option>Юридический</option>
+                                                                    </select>
+                                                                </div>
                                                             </div>
                                                         </form>
-                                                    </div>
+                                                        <div class="h5 simple-icon-plus ml-3"></div>
+                                                            <div class="card mb-4">
+                                                                <div class="card-body p-2">
+                                                                    <h5 class="mb-2">Загруженные файлы</h5>
+                                                                    <form action="/file-upload">
+                                                                        <div class="dropzone">
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                         </div>
+                                                <div id="step-2">
+                                                    <form id="form-step-2" class="tooltip-label-right" novalidate>
+                                                        <div class="form-group position-relative error-l-75">
+                                                            <label for="name">First Name</label>
+                                                            <input type="text" class="form-control" name="nameValidation"
+                                                                id="nameValidation" placeholder="Your first name" required>
+                                                        </div>
+                                                        <div class="form-group position-relative error-l-75">
+                                                            <label for="lastName">Last Name</label>
+                                                            <input type="text" class="form-control" name="lastNameValidation"
+                                                                id="lastNameValidation" placeholder="Your last name" required>
+                                                        </div>
+                                                    </form>
                                                 </div>
+                                                <div id="step-3">
+                                                    <form id="form-step-3" class="tooltip-label-right" novalidate>
+                                                        <div class="form-group position-relative error-l-75">
+                                                            <label for="name">First Name</label>
+                                                            <input type="text" class="form-control" name="nameValidation"
+                                                                id="nameValidation" placeholder="Your first name" required>
+                                                        </div>
+                                                        <div class="form-group position-relative error-l-75">
+                                                            <label for="lastName">Last Name</label>
+                                                            <input type="text" class="form-control" name="lastNameValidation"
+                                                                id="lastNameValidation" placeholder="Your last name" required>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div id="step-4">
+                                                    <h4 class="text-center">Thank you for your feedback!</h4>
+                                                    <p class="muted text-center p-4">
+                                                        Podcasting operational change management inside of workflows to establish a
+                                                        framework. Taking seamless key performance indicators offline to maximise the
+                                                        long tail. Keeping your eye on the ball while performing a deep dive on the
+                                                        start-up mentality.
+                                                    </p>
+                                                </div>
+                                            </div>
+                
+                                            <div class="btn-toolbar custom-toolbar text-center card-body pt-0">
+                                                <button class="btn btn-secondary prev-btn" type="button">Previous</button>
+                                                <button class="btn btn-secondary next-btn" type="button">Next</button>
+                                                <button class="btn btn-secondary finish-btn" type="submit">Finish</button>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                                        <h2 class="text-center mb-5"><strong>Информация по договору</strong></h2>
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="form-group row">
-                                                    <label for="inputname6" class="col-sm-3 col-form-label">Подразделение:</label>
-                                                    <select class="col-sm-8 form-control form-control-sm" id="inputname6">
-                                                        <option></option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label for="inputname5" class="col-sm-3 col-form-label">Должность:</label>
-                                                    <select class="col-sm-8 form-control form-control-sm" id="inputname5">
-                                                        <option></option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label for="inputname3" class="col-sm-3 col-form-label">График работы:</label>
-                                                    <select class="col-sm-8 form-control form-control-sm" id="inputname3">
-                                                        <option></option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label for="inputname2" class="col-sm-3 col-form-label">Вид занятости:</label>
-                                                      <input type="text" class="col-sm-4 form-control form-control-sm" id="inputname2">
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label for="inputname2" class="col-sm-3 col-form-label">Оклад:</label>
-                                                      <input type="text" class="col-sm-2 form-control form-control-sm" id="inputname2" placeholder="0.00">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="pills-extrainfo" role="tabpanel" aria-labelledby="pills-extrainfo-tab">
-                                        <h2 class="text-center mb-5"><strong>Дополнительные сведения</strong></h2>
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="form-group row">
-                                                    <label for="inputname7" class="col-sm-3 col-form-label">Резидентура:</label>
-                                                    <select class="col-sm-4 form-control form-control-sm" id="inputname7">
-                                                        <option></option>
-                                                        <option>Резидент</option>
-                                                        <option>Не резидент</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label for="inputname8" class="col-sm-3 col-form-label">Пенс. реформа:</label>
-                                                    <select class="col-sm-4 form-control form-control-sm" id="inputname8">
-                                                        <option></option>
-                                                        <option>Учавствует</option>
-                                                        <option>Не учавствует</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label for="inputname9" class="col-sm-3 col-form-label">Тип налога:</label>
-                                                    <select class="col-sm-8 form-control form-control-sm" id="inputname9">
-                                                        <option></option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label for="inputname10" class="col-sm-3 col-form-label">Льготы:</label>
-                                                    <select class="col-sm-8 form-control form-control-sm" id="inputname10">
-                                                        <option></option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="pills-totalinfo" role="tabpanel" aria-labelledby="pills-totalinfo-tab">
-                                        <h2 class="text-center mb-5"><strong>Итоговые данные</strong></h2>
-                                    </div>
-                                </div>
-                            </div>
+                                </div>                            
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-outline-primary"
                                     data-dismiss="modal">Отмена</button>
@@ -1274,6 +1182,7 @@
     <script src="js/vendor/Sortable.js"></script>
     <script src="js/vendor/mousetrap.min.js"></script>
     <script src="js/vendor/glide.min.js"></script>
+    <script src="js/vendor/jquery.smartWizard.min.js"></script>
     <script src="js/vendor/jquery.validate/jquery.validate.min.js"></script>
     <script src="js/vendor/jquery.validate/additional-methods.min.js"></script>
     <script src="js/dore.script.js"></script>
