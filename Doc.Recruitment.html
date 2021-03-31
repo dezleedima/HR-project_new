@@ -759,35 +759,38 @@
                     </div>
                         <div class="row justify-content-between mt-3 align-items-center">
                             <div class="row col-8">
-                                <div class="input-group input-group-sm mb-2 col-sm-4 ml-1">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text pl-2" id="inputGroup-sizing-sm">Подбор:</span>
+                                <div class="dropdown d-inline-block">
+                                    <button class="btn btn-outline-primary rounded-lg dropdown-toggle ml-4 mr-2" type="button"
+                                        id="dropdownMenuPodbor" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Подбор
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuPodbor">
+                                        <a class="dropdown-item" href="#">По всем дооворам</a>
+                                        <a class="dropdown-item" href="#">По группе дооворов</a>
+                                        <a class="dropdown-item" href="#">По значению</a>
                                     </div>
-                                    <select class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" data-width="100%">
-                                        <option></option>
-                                        <option>По всем дооворам</option>
-                                        <option>По группе дооворов</option>
-                                        <option>По значениюыы</option>
-                                    </select>
                                 </div>
                                 <div class="align-items-center">
-                                    <a class="iconsminds-folder-add-- h3 text-primary mr-1" data-toggle="tooltip"
+                                    <a class="simple-icon-user-follow h3 text-primary mr-2" data-toggle="tooltip"
                                         data-placement="bottom" title="Добавить" href="#"></a>
-                                    <a class="iconsminds-folders h3 text-primary mr-1" data-toggle="tooltip"
+                                    <a class="simple-icon-people h3 text-primary mr-2" data-toggle="tooltip"
                                         data-placement="bottom" title="Скопировать" href="#"></a>
-                                    <a class="iconsminds-folder-close h3 text-primary mr-1" data-toggle="tooltip"
+                                    <a class="simple-icon-user-unfollow h3 text-primary mr-1" data-toggle="tooltip"
                                         data-placement="bottom" title="Удалить" href="#"></a>
                                 </div>
-                                <div class="input-group input-group-sm mb-2 col-sm-4">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text pl-1" id="inputGroup-sizing-sm">Расчитать:</span>
+
+                                <div class="dropdown d-inline-block">
+                                    <button class="btn btn-outline-primary rounded-lg dropdown-toggle ml-1 mr-2" type="button"
+                                        id="dropdownMenuRas" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Расчитать
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuRas">
+                                        <a class="dropdown-item" href="#">Расчитать все</a>
+                                        <a class="dropdown-item" href="#">Расчитать НДФЛ</a>
+                                        <a class="dropdown-item" href="#">Расчитать пенсю фонд</a>
                                     </div>
-                                    <select class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" data-width="100%">
-                                        <option></option>
-                                        <option>Расчитать все</option>
-                                        <option>Расчитать НДФЛ</option>
-                                        <option>Расчитать пенсю фонд</option>
-                                    </select>
                                 </div>
                             </div>
                             <div class="align-items-center">
