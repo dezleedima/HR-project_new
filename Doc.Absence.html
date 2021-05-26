@@ -730,7 +730,7 @@
                                 </div>
                                 </div>
                             </div>
-                        <h2 class="col-4 offset-4 text-primary"><strong>НЕЯВКА</strong></h2>
+                        <h2 class="col-4 offset-4 text-primary"><strong>ДОКУМЕНТ НЕЯВКИ</strong></h2>
                     </div>
                     
                     <div class="form-row justify-content-center">
@@ -759,31 +759,7 @@
                             </select>
                         </div>            
                     </div>
-                    <div class="row mt-2">
-                        <div class="input-group input-group-sm col-sm-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text pl-5" id="inputGroup-sizing-sm">Вид расчета:</span>
-                            </div>
-                            <select class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" data-width="100%">
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="input-group input-group-sm mb-2 col-sm-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text pl-5" id="inputGroup-sizing-sm">Тип периода:</span>
-                            </div>
-                            <select class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" data-width="100%">
-                                <option></option>
-                                <option>По дням</option>
-                                <option>По часам</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row justify-content-between mt-2 align-items-center">
+                    <div class="row justify-content-between my-3 align-items-center">
                         <div class="row col-8">
                             <div class="dropdown d-inline-block">
                                 <button class="btn btn-outline-primary rounded-lg dropdown-toggle ml-4 mr-2" type="button"
@@ -830,42 +806,91 @@
                                     data-placement="bottom" title="Закрыть" href="#"></a>
                         </div>  
                     </div>                    
-                    <div class="card w-100 p-2 mt-2" style="height: 550px;">
+                    <div class="card w-100 p-2 mt-1" style="height: 550px;">
                         <div class="card d-flex flex-row justify-content-between" style="height: 530px;">
-                            <div class="card w-25 mr-1">
+                            <div class="card w-25">
                                 <div class="card-header bg-primary pt-2 text-center">
-                                    <h5 class="mb-0">Сотрудник</h5>
+                                    <h6 class="mb-0">Сотрудник</h6>
                                 </div>
                                 <div class="card-body" >
                                     
                                 </div>
-                              </div>
-                               <div class="card w-25 mr-1">
+                            </div>
+                            <div class="card w-12">
                                 <div class="card-header bg-primary pt-2 text-center">
-                                    <h5 class="mb-0">График Работы</h5>
+                                    <h6 class="mb-0">Вид расчета</h6>
                                 </div>
                                 <div class="card-body">
                                     
                                 </div>
-                              </div>
-                              <div class="card w-25 mr-1">
-                                <div class="card-header bg-primary pt-2 text-center">
-                                    <h5 class="mb-0">Размер</h5>
+                            </div>
+                            <div class="card  w-10">
+                                <div class="card-header bg-primary py-1 text-center">
+                                    <h6 class="mb-0" style="line-height: 16.5px;">Тип периода</h6>
+                                </div>
+                                <div class="card-body px-2 text-right">
+                                    <select class="form-control" required>
+                                        <option></option>
+                                        <option>Мобильный</option>
+                                        <option>Домашний</option>
+                                    </select>
                                 </div>
                                 <div class="card-body">
                                     
                                 </div>
-                               </div>
-                              <div class="card w-25 mr-1">
+                            </div>
+                            <div class="card w-10">
                                 <div class="card-header bg-primary pt-2 text-center">
-                                    <h5 class="mb-0">Сумма без НДФЛ и ПФ</h5>
+                                    <h6 class="mb-0">Дата нач.</h6>
                                 </div>
                                 <div class="card-body">
                                     
                                 </div>
-                              </div>
-                            </div>     
-                        </div>
+                            </div>
+                            <div class="card w-10">
+                                <div class="card-header bg-primary py-1 text-center">
+                                    <h6 class="mb-0" style="line-height: 16.5px;">Дата оконч.</h6>
+                                </div>
+                                <div class="card-body">
+                                    
+                                </div>
+                            </div>
+                            <div class="card w-10">
+                                <div class="card-header bg-primary px-2 py-1 text-center">
+                                    <h6 class="mb-0" style="line-height: 16.5px;">Кол. дней/ <br>
+                                        Кол. часов</h6>
+                                </div>
+                                <div class="card-body">
+                                    
+                                </div>
+                            </div>
+                            <div class="card w-20">
+                                <div class="card-header bg-primary pt-2 text-center">
+                                    <h6 class="mb-0">График работы</h6>
+                                </div>
+                                <div class="card-body">
+                                    
+                                </div>
+                            </div>
+                            <div class="card w-12">
+                                <div class="card-header bg-primary pt-2 text-center">
+                                    <h6 class="mb-0">Размер</h6>
+                                </div>
+                                <div class="card-body">
+                                    
+                                </div>
+                            </div>
+                            <div class="card w-12">
+                                <div class="card-header bg-primary py-1 text-center">
+                                    <h6 class="mb-0" style="line-height: 16.5px;">Сумма без <br>
+                                        НДФЛ и ПФ</h6>
+                                </div>
+                                <div class="card-body">
+                                    
+                                </div>
+                            </div>
+                        </div>     
+                    </div>
                 </div>
             </div>
         </div>
