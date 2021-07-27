@@ -753,16 +753,16 @@
                                                                 <input type="text" class="form-control" name="jQueryTopLabelIB"/>
                                                                 <span>Наименование ИБ</span>
                                                             </div>
-                                                            <div class="form-group has-float-label error-l-75 d-flex">
+                                                            <div class="form-group has-float-label d-flex">
                                                                 <input type="text" class="form-control" name="jQueryTopLabelIN" />
                                                                 <span>ИНН</span>
                                                                 <a class="col-sm-2" href="#"><i class="h5 simple-icon-cloud-download"></i></a>
                                                             </div>
-                                                            <div class="form-group has-float-label error-l-75">
+                                                            <div class="form-group has-float-label">
                                                                 <input type="text" class="form-control" name="jQueryTopLabelIUR"/>
                                                                 <span>Юр. наименование</span>
                                                             </div>
-                                                            <div class="form-group has-float-label error-l-125">
+                                                            <div class="form-group has-float-label">
                                                                 <input type="text" class="form-control" name="jQueryTopLabelDATA" />
                                                                 <span>Дата регистрации</span>
                                                             </div>
@@ -791,15 +791,15 @@
                                                             <input type="text" class="form-control" name="jQueryTopLabelIURA"/>
                                                             <span>Юр. адрес:</span>
                                                         </div>
-                                                        <div class="form-group has-float-label error-l-75">
+                                                        <div class="form-group has-float-label">
                                                             <input type="text" class="form-control" name="jQueryTopLabelFACT"/>
                                                             <span>Факт. адрес:</span>
                                                         </div>
-                                                        <div class="form-group has-float-label error-l-75">
+                                                        <div class="form-group has-float-label">
                                                             <input type="text" class="form-control" name="jQueryTopLabelTEL" />
                                                             <span>Тел. номер:</span>
                                                         </div>
-                                                        <div class="form-group has-float-label error-l-125">
+                                                        <div class="form-group has-float-label">
                                                             <input type="text" class="form-control" name="jQueryTopLabelEmail" />
                                                             <span>Email:</span>
                                                         </div>
@@ -865,7 +865,7 @@
                                                             <input type="text" class="form-control" name="jQueryTopLabelDIR"/>
                                                             <span>Директор</span>
                                                         </div>
-                                                        <div class="form-group has-float-label error-l-75">
+                                                        <div class="form-group has-float-label">
                                                             <input type="text" class="form-control" name="jQueryTopLabelDIRNAME"/>
                                                             <span>Имя директора для подписи</span>
                                                         </div>
@@ -900,6 +900,9 @@
                     </div>
                 </div>
              </div>
+
+             <!-- модальное окно -->
+
              <div class="modal fade modal-right" id="exampleModalRightOrg" tabindex="-1" role="dialog"
                     aria-labelledby="exampleModalRight" aria-hidden="true">
                     <div class="modal-dialog" role="document">
@@ -930,16 +933,16 @@
                                                     <div class="row">
                                                         <div class="col-8">
                                                             <form id="form-step-0" class="tooltip-label-right" novalidate>
-                                                                <div class="form-group has-float-label d-flex">
+                                                                <div class="form-group has-float-label d-flex error-l-75">
                                                                     <input type="text" class="form-control" name="jQueryTopLabelINN1" required />
                                                                     <span>ИНН</span>
                                                                     <a class="col-sm-2" href="#"><i class="h5 simple-icon-cloud-download"></i></a>
                                                                 </div>
-                                                                <div class="form-group has-float-label">
+                                                                <div class="form-group has-float-label error-l-100">
                                                                     <input type="text" class="form-control" name="jQueryTopLabelNAME1" required />
                                                                     <span>Юр. наименование</span>
                                                                 </div>
-                                                                <div class="form-group has-float-label error-l-75">
+                                                                <div class="form-group has-float-label error-l-100">
                                                                     <input type="text" class="form-control" name="jQueryTopLabelLASTNAME1" required />
                                                                     <span>Дата регистрации</span>
                                                                 </div>
@@ -967,15 +970,15 @@
                                                     <button type="button" class="h5 btn simple-icon-question p-1" data-toggle="tooltip" data-placement="bottom" title="Необходимо заполнить одну строку телефона и одну строку адреса"></button>
                                                     </div>
                                                         <form id="form-step-1" class="tooltip-label-right mb-3" novalidate>
-                                                            <div class="form-group has-float-label error-l-75 d-flex">
+                                                            <div class="form-group has-float-label error-l-75">
                                                                 <input type="text" class="form-control col-sm-5" name="jQueryTopLabelADR1" required />
                                                                 <span>Юр. адрес</span>
                                                             </div>
-                                                            <div class="form-group has-float-label error-l-75 d-flex">
+                                                            <div class="form-group has-float-label error-l-100">
                                                                 <input type="text" class="form-control col-sm-5" name="jQueryTopLabelADR2" required />
                                                                 <span>Факт. адрес</span>
                                                             </div>
-                                                            <div class="form-group has-float-label error-l-75 d-flex">
+                                                            <div class="form-group has-float-label error-l-75">
                                                                 <input type="text" class="form-control col-sm-5" name="jQueryTopLabelTEL" required />
                                                                 <span>Телефон</span>
                                                             </div>
@@ -1043,12 +1046,12 @@
                                                 <div id="step-3">
                                                     <h2 class="text-center my-3"><strong>Печать и подписи</strong></h2>
                                                     <form id="form-step-3" class="tooltip-label-right" novalidate>
-                                                        <div class="form-group has-float-label">
-                                                            <input type="text" class="form-control col-sm-5" name="jQueryTopLabelDIR"/>
+                                                        <div class="form-group has-float-label error-l-75">
+                                                            <input type="text" class="form-control col-sm-5" name="jQueryTopLabelDIR" required/>
                                                             <span>Директор</span>
                                                         </div>
-                                                        <div class="form-group has-float-label error-l-75">
-                                                            <input type="text" class="form-control col-sm-5" name="jQueryTopLabelDIRNAME"/>
+                                                        <div class="form-group has-float-label error-l-150">
+                                                            <input type="text" class="form-control col-sm-5" name="jQueryTopLabelDIRNAME" required/>
                                                             <span>Имя директора для подписи</span>
                                                         </div>
                                                     </form>
@@ -1065,7 +1068,7 @@
                                                 <div id="step-4">
                                                     <h2 class="text-center my-3"><strong>Прочие данные</strong></h2>
                                                     <form id="form-step-4" class="tooltip-label-right mb-3" novalidate>
-                                                        <div class="form-group has-float-label error-l-75 d-flex">
+                                                        <div class="form-group has-float-label error-l-150">
                                                             <input type="text" class="form-control col-sm-5" name="jQueryTopLabelNDFL" required />
                                                             <span>Основной процент НДФЛ</span>
                                                         </div>
