@@ -11,14 +11,17 @@
 
     <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
     <link rel="stylesheet" href="css/vendor/bootstrap.rtl.only.min.css" />
+    <link rel="stylesheet" href="css/vendor/bootstrap-float-label.min.css" />
     <link rel="stylesheet" href="css/vendor/fullcalendar.min.css" />
     <link rel="stylesheet" href="css/vendor/dataTables.bootstrap4.min.css" />
     <link rel="stylesheet" href="css/vendor/datatables.responsive.bootstrap4.min.css" />
+    <link rel="stylesheet" href="css/vendor/dropzone.min.css" />
     <link rel="stylesheet" href="css/vendor/select2.min.css" />
     <link rel="stylesheet" href="css/vendor/perfect-scrollbar.css" />
     <link rel="stylesheet" href="css/vendor/glide.core.min.css" />
     <link rel="stylesheet" href="css/vendor/bootstrap-stars.css" />
     <link rel="stylesheet" href="css/vendor/nouislider.min.css" />
+    <link rel="stylesheet" href="css/vendor/smart_wizard.min.css" />
     <link rel="stylesheet" href="css/vendor/bootstrap-datepicker3.min.css" />
     <link rel="stylesheet" href="css/vendor/component-custom-switch.min.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -55,8 +58,18 @@
                 </span>
             </div>
 
-            <a class="btn btn-sm btn-outline-primary ml-3 d-none d-md-inline-block"
-                href="https://1.envato.market/5kAb">&nbsp;BUY&nbsp;</a>
+            <div class="dropdown d-inline-block ml-3">
+                <a class="btn btn-outline-primary dropdown-toggle" href="#" role="button"
+                    id="dropdownMenuCOMP" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    LLC Company_1
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuCOMP">
+                    <a class="dropdown-item" href="#">LLC Company_1</a>
+                    <a class="dropdown-item" href="#">LLC Company_2</a>
+                    <a class="dropdown-item simple-icon-plus" href=""  data-toggle="modal" data-backdrop="static" data-target="#exampleModalRightOrg"><span class="font-italic ml-2 h6">Add new company</span> </a>
+                </div>
+            </div>
         </div>
 
 
@@ -1084,6 +1097,200 @@
                 </div>
             </div>
         </div>
+         <!-- модальное окно -->
+
+         <div class="modal fade modal-right" id="exampleModalRightOrg" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalRight" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+             <div class="modal-content">
+                 <div class="modal-header flex-column px-4">
+                     <div class="w-100 d-inline-block text-center">
+                         <h1 class="text-danger">Мастер регистрации организации</h1>
+                         <button type="button" class="text-primary close simple-icon-arrow-right-circle" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true"></span>
+                         </button>
+                     </div>
+                     <p class="text-center text-muted mb-1"><em>Данное меню поможет вам быстро и удобно зарегистрировать организацию, заполнив 
+                         самые необходимые данные</em></p>
+                 </div>
+                     <div class="modal-body pt-1">
+                         <div class="col-12 mb-4">
+                             <div id="smartWizardValidation">
+                                 <ul class="card-header">
+                                     <li><a href="#step-0">ШАГ 1<br />Основные<br> данные</a></li>
+                                     <li><a href="#step-1">ШАГ 2<br />Контактная<br> информация</a></li>
+                                     <li><a href="#step-2">ШАГ 3<br />Условие <br>договора</a></li>
+                                     <li><a href="#step-3">ШАГ 4<br />Дополнительная <br> информация</a></li>
+                                     <li><a href="#step-4">ШАГ 5<br />Итог и <br>завершение</a></li>
+                                 </ul>
+                                 <div class="">
+                                     <div id="step-0">
+                                         <h2 class="text-center my-3"><strong>Основная информация</strong></h2>
+                                         <div class="row">
+                                             <div class="col-8">
+                                                 <form id="form-step-0" class="tooltip-label-right" novalidate>
+                                                     <div class="form-group has-float-label d-flex error-l-50">
+                                                         <input type="text" class="form-control" name="jQueryTopLabelINN1" required />
+                                                         <span>ИНН</span>
+                                                         <a class="col-sm-2" href="#"><i class="h5 simple-icon-cloud-download"></i></a>
+                                                     </div>
+                                                     <div class="form-group has-float-label error-l-125">
+                                                         <input type="text" class="form-control" name="jQueryTopLabelNAME1" required />
+                                                         <span>Юр. наименование</span>
+                                                     </div>
+                                                     <div class="form-group has-float-label error-l-125">
+                                                         <input type="text" class="form-control" name="jQueryTopLabelLASTNAME1" required />
+                                                         <span>Дата регистрации</span>
+                                                     </div>
+                                                 </form>
+                                             </div>
+                                             <div class="col-4 text-center">
+                                                 <div class="card" style="height: 150px; background-color: rgb(238, 234, 234);">
+                                                         <img class="" src="" alt="">
+                                                         <div class="card-body p-1 d-flex justify-content-center align-items-center h4 text-light">
+                                                         Logo
+                                                         </div>
+                                                 </div>
+                                                 <label class="btn btn-success btn-sm py-1 my-2 btn-upload" for="inputImage"
+                                                     title="Upload image file">
+                                                     <input type="file" class="sr-only" id="inputImage" name="file"
+                                                         accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff">Привязать
+                                                 </label>
+                                                 <button type="button" class="btn btn-dark btn-sm py-1">Открепить</button>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div id="step-1">
+                                         <div class="text-center">
+                                         <h2 class="my-3 d-inline-block "><strong>Адреса и номера</strong></h2>
+                                         <button type="button" class="h5 btn simple-icon-question p-1" data-toggle="tooltip" data-placement="bottom" title="Необходимо заполнить одну строку телефона и одну строку адреса"></button>
+                                         </div>
+                                             <form id="form-step-1" class="tooltip-label-right mb-3" novalidate>
+                                                 <div class="form-group has-float-label error-l-75">
+                                                     <input type="text" class="form-control col-sm-5" name="jQueryTopLabelADR1" required />
+                                                     <span>Юр. адрес</span>
+                                                 </div>
+                                                 <div class="form-group has-float-label error-l-100">
+                                                     <input type="text" class="form-control col-sm-5" name="jQueryTopLabelADR2" required />
+                                                     <span>Факт. адрес</span>
+                                                 </div>
+                                                 <div class="form-group has-float-label error-l-75">
+                                                     <input type="text" class="form-control col-sm-5" name="jQueryTopLabelTEL" required />
+                                                     <span>Телефон</span>
+                                                 </div>
+                                                 <div class="form-group has-float-label error-l-50">
+                                                     <input type="email" class="form-control col-sm-5" name="jQueryTopLabelEMAIL" required />
+                                                     <span>Email</span>
+                                                 </div>
+                                             </form> 
+                                         </div>
+                                     <div id="step-2">
+                                         <h2 class="my-3 text-center"><strong>Банковские счета и кассы</strong></h2>
+                                         <form id="form-step-2" class="tooltip-label-right" novalidate>
+                                             <div class="col-10">
+                                                 <div class="card px-3">
+                                                     <h6 class="my-2">Банковские счета</h6>
+                                                     <table class="table table-bordered table-sm table-hover rounded mb-2">
+                                                     <tbody>
+                                                       <tr>
+                                                         <th scope="row" class="text-right bg-secondary" >
+                                                             <p class="badge badge-pill badge-outline-light">PRIMARY</p>
+                                                         </th>
+                                                       </tr>
+                                                       <tr>
+                                                         <th scope="row" class="text-right" >
+                                                             <p class="badge badge-pill badge-outline-secondary">ADDITIONAL</p>
+                                                         </th>
+                                                       </tr>
+                                                       <tr>
+                                                         <th scope="row" class="text-right" >
+                                                             <p class="badge badge-pill badge-outline-secondary">ADDITIONAL</p>
+                                                         </th>
+                                                       </tr>
+                                                     </tbody>
+                                                     </table>
+                                                     <div class="h5 simple-icon-plus ml-1 text-primary"></div>
+                                                 </div>
+                                                 </div>
+                                                 <div class="col-10 pt-3">
+                                                     <div class="card px-3">
+                                                         <h6 class="my-2">Кассы</h6>
+                                                         <table class="table table-bordered table-sm table-hover rounded mb-2">
+                                                         <tbody>
+                                                           <tr>
+                                                             <th scope="row" class="text-right bg-secondary" >
+                                                                 <p class="badge badge-pill badge-outline-light">PRIMARY</p>
+                                                             </th>
+                                                           </tr>
+                                                           <tr>
+                                                             <th scope="row" class="text-right" >
+                                                                 <p class="badge badge-pill badge-outline-secondary">ADDITIONAL</p>
+                                                             </th>
+                                                           </tr>
+                                                           <tr>
+                                                             <th scope="row" class="text-right" >
+                                                                 <p class="badge badge-pill badge-outline-secondary">ADDITIONAL</p>
+                                                             </th>
+                                                           </tr>
+                                                         </tbody>
+                                                         </table>
+                                                         <div class="h5 simple-icon-plus ml-1 text-primary"></div>
+                                                     </div>
+                                                 </div> 
+                                         </form>
+                                     </div>
+                                     <div id="step-3">
+                                         <h2 class="text-center my-3"><strong>Печать и подписи</strong></h2>
+                                         <form id="form-step-3" class="tooltip-label-right" novalidate>
+                                             <div class="form-group has-float-label error-l-75">
+                                                 <input type="text" class="form-control col-sm-5" name="jQueryTopLabelDIR" required/>
+                                                 <span>Директор</span>
+                                             </div>
+                                             <div class="form-group has-float-label error-l-150">
+                                                 <input type="text" class="form-control col-sm-5" name="jQueryTopLabelDIRNAME" required/>
+                                                 <span>Имя директора для подписи</span>
+                                             </div>
+                                         </form>
+                                         <div class="card mb-4">
+                                             <div class="card-body p-2">
+                                                 <h6 class="mb-2">Факсимиле</h6>
+                                                 <form action="/file-upload">
+                                                     <div class="dropzone col-sm-5">
+                                                     </div>
+                                                 </form>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div id="step-4">
+                                         <h2 class="text-center my-3"><strong>Прочие данные</strong></h2>
+                                         <form id="form-step-4" class="tooltip-label-right mb-3" novalidate>
+                                             <div class="form-group has-float-label error-l-150">
+                                                 <input type="text" class="form-control col-sm-5" name="jQueryTopLabelNDFL" required />
+                                                 <span>Основной процент НДФЛ</span>
+                                             </div>
+                                         </form> 
+                                     </div>
+                                 </div>
+     
+                                 <div class="btn-toolbar custom-toolbar text-center card-body pt-0 align-middle"> 
+                                     <a class="col-sm-2" href="#"><i class="h3 iconsminds-refresh float-left mb-0"></i></a>
+                                     <button type="button" class="h3 text-primary close iconsminds-arrow-x-left float-left mb-0" data-dismiss="modal" aria-label="Close">
+                                         <span aria-hidden="true"></span>
+                                     </button>
+
+                                     <button class="btn btn-secondary prev-btn" type="button">Previous</button>
+                                     <button class="btn btn-secondary next-btn" type="button">Next</button>
+                                     <button class="btn btn-secondary finish-btn" type="submit">Finish</button>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>                            
+                 <div class="modal-footer">
+
+                 </div>
+             </div>
+         </div>
+     </div>
      </main>
     
     <footer class="page-footer">
@@ -1114,6 +1321,7 @@
     
 
     <script src="js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="js/vendor/dropzone.min.js"></script>
     <script src="js/vendor/bootstrap.bundle.min.js"></script>
     <script src="js/vendor/Chart.bundle.min.js"></script>
     <script src="js/vendor/chartjs-plugin-datalabels.js"></script>
@@ -1129,6 +1337,9 @@
     <script src="js/vendor/Sortable.js"></script>
     <script src="js/vendor/mousetrap.min.js"></script>
     <script src="js/vendor/glide.min.js"></script>
+    <script src="js/vendor/jquery.smartWizard.min.js"></script>
+    <script src="js/vendor/jquery.validate/jquery.validate.min.js"></script>
+    <script src="js/vendor/jquery.validate/additional-methods.min.js"></script>
     <script src="js/dore.script.js"></script>
     <script src="js/scripts.js"></script>
 </body>
