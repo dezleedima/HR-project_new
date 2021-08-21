@@ -727,95 +727,128 @@
         <main>
              <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xl-8 col-lg-10 col-md-12"> 
-                        <div class="card" style="height: 500px;">
-                            <div class="card-header bg-primary p-2 d-flex justify-content-between align-items-center"> 
-                                <div class="h6 mb-0">LCC WeDoo</div>
-                                <div class="h6 mb-0">Основная Информация</div>
-                                <div class="d-flex align-items-center">
-                                    <a class="simple-icon-menu h5 text-white mr-2 mb-0" href="#"></a>
-                                    <a class="iconsminds-resize h5 text-white mr-2 mb-0" href="#"></a>
-                                    <a class="simple-icon-logout h5 text-white mb-0" href="#"></a>
+                    <div class="col-12 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <ul class="nav nav-tabs card-header-tabs " role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="first-tab" data-toggle="tab" href="#first"
+                                            role="tab" aria-controls="first" aria-selected="true">Основная информация</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="second-tab" data-toggle="tab" href="#second"
+                                            role="tab" aria-controls="second" aria-selected="false">Адреса и номера</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="third-tab" data-toggle="tab" href="#third"
+                                            role="tab" aria-controls="third" aria-selected="false">Счета и кассы</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="forth-tab" data-toggle="tab" href="#forth"
+                                            role="tab" aria-controls="forth" aria-selected="false">Печать и подписи</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="fifth-tab" data-toggle="tab" href="#fifth"
+                                            role="tab" aria-controls="fifth" aria-selected="false">Прочее</a>
+                                    </li>
+                                </ul>
                             </div>
-                            </div>
-                            <div class="card-body p-0">
-                                <div class="row px-3 py-2">
-                                    <div class="col-4 bg-light ">
-                                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-info" role="tab" aria-controls="v-pills-info" aria-selected="true">Основная информация</a>
-                                            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-add" role="tab" aria-controls="v-pills-add" aria-selected="false">Адреса и номера</a>
-                                            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-acc" role="tab" aria-controls="v-pills-acc" aria-selected="false">Счета и кассы</a>
-                                            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-sign" role="tab" aria-controls="v-pills-sign" aria-selected="false">Печать и подписи</a>
-                                            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-ano" role="tab" aria-controls="v-pills-ano" aria-selected="false">Прочее</a>
-                                          </div>
+                            <div class="card-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane fade show active" id="first" role="tabpanel"
+                                        aria-labelledby="first-tab">
+                                        <div class="row mt-4 ml-1">
+                                            <div class="col-4">
+                                                <form class="tooltip-label-right" >
+                                                    <div class="form-group has-float-label">
+                                                        <input type="text" class="form-control" name="jQueryTopLabelIB"/>
+                                                        <span>Наименование ИБ</span>
+                                                    </div>
+                                                    <div class="form-group has-float-label d-flex">
+                                                        <input type="text" class="form-control" name="jQueryTopLabelIN" />
+                                                        <span>ИНН</span>
+                                                        <a class="col-sm-2" href="#"><i class="h5 simple-icon-cloud-download"></i></a>
+                                                    </div>
+                                                    <div class="form-group has-float-label">
+                                                        <input type="text" class="form-control" name="jQueryTopLabelIUR"/>
+                                                        <span>Юр. наименование</span>
+                                                    </div>
+                                                    <div class="form-group has-float-label">
+                                                        <input type="text" class="form-control" name="jQueryTopLabelDATA" />
+                                                        <span>Дата регистрации</span>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="col-2 text-center">
+                                                <div class="card" style="height: 150px; background-color: rgb(238, 234, 234);">
+                                                        <img class="" src="" alt="">
+                                                        <div class="card-body p-1 d-flex justify-content-center align-items-center h4 text-light">
+                                                        Logo
+                                                        </div>
+                                                </div>
+                                                <label class="btn btn-success btn-sm py-1 my-2 btn-upload" for="inputImage"
+                                                    title="Upload image file">
+                                                    <input type="file" class="sr-only" id="inputImage" name="file"
+                                                        accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff">Привязать
+                                                </label>
+                                                <button type="button" class="btn btn-dark btn-sm py-1">Открепить</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-8">
-                                        <div class="tab-content" id="v-pills-tabContent">
-                                            <div class="tab-pane fade show active" id="v-pills-info" role="tabpanel" aria-labelledby="v-pills-info-tab">
-                                                <div class="row mt-4 ml-1">
-                                                    <div class="col-7">
-                                                        <form class="tooltip-label-right" >
-                                                            <div class="form-group has-float-label">
-                                                                <input type="text" class="form-control" name="jQueryTopLabelIB"/>
-                                                                <span>Наименование ИБ</span>
-                                                            </div>
-                                                            <div class="form-group has-float-label d-flex">
-                                                                <input type="text" class="form-control" name="jQueryTopLabelIN" />
-                                                                <span>ИНН</span>
-                                                                <a class="col-sm-2" href="#"><i class="h5 simple-icon-cloud-download"></i></a>
-                                                            </div>
-                                                            <div class="form-group has-float-label">
-                                                                <input type="text" class="form-control" name="jQueryTopLabelIUR"/>
-                                                                <span>Юр. наименование</span>
-                                                            </div>
-                                                            <div class="form-group has-float-label">
-                                                                <input type="text" class="form-control" name="jQueryTopLabelDATA" />
-                                                                <span>Дата регистрации</span>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                    <div class="col-4 text-center">
-                                                        <div class="card" style="height: 150px; background-color: rgb(238, 234, 234);">
-                                                                <img class="" src="" alt="">
-                                                                <div class="card-body p-1 d-flex justify-content-center align-items-center h4 text-light">
-                                                                Logo
-                                                                </div>
-                                                        </div>
-                                                        <label class="btn btn-success btn-sm py-1 my-2 btn-upload" for="inputImage"
-                                                            title="Upload image file">
-                                                            <input type="file" class="sr-only" id="inputImage" name="file"
-                                                                accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff">Привязать
-                                                        </label>
-                                                        <button type="button" class="btn btn-dark btn-sm py-1">Открепить</button>
-                                                    </div>
+                                    <div class="tab-pane fade" id="second" role="tabpanel"
+                                        aria-labelledby="second-tab">
+                                        <div class="col-4 mt-4">
+                                            <form class="tooltip-label-right" >
+                                                <div class="form-group has-float-label">
+                                                    <input type="text" class="form-control" name="jQueryTopLabelIURA"/>
+                                                    <span>Юр. адрес:</span>
                                                 </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="v-pills-add" role="tabpanel" aria-labelledby="v-pills-add-tab">
-                                                <div class="col-8 mt-4">
-                                                    <form class="tooltip-label-right" >
-                                                        <div class="form-group has-float-label">
-                                                            <input type="text" class="form-control" name="jQueryTopLabelIURA"/>
-                                                            <span>Юр. адрес:</span>
-                                                        </div>
-                                                        <div class="form-group has-float-label">
-                                                            <input type="text" class="form-control" name="jQueryTopLabelFACT"/>
-                                                            <span>Факт. адрес:</span>
-                                                        </div>
-                                                        <div class="form-group has-float-label">
-                                                            <input type="text" class="form-control" name="jQueryTopLabelTEL" />
-                                                            <span>Тел. номер:</span>
-                                                        </div>
-                                                        <div class="form-group has-float-label">
-                                                            <input type="text" class="form-control" name="jQueryTopLabelEmail" />
-                                                            <span>Email:</span>
-                                                        </div>
-                                                    </form>
+                                                <div class="form-group has-float-label">
+                                                    <input type="text" class="form-control" name="jQueryTopLabelFACT"/>
+                                                    <span>Факт. адрес:</span>
                                                 </div>
+                                                <div class="form-group has-float-label">
+                                                    <input type="text" class="form-control" name="jQueryTopLabelTEL" />
+                                                    <span>Тел. номер:</span>
+                                                </div>
+                                                <div class="form-group has-float-label">
+                                                    <input type="text" class="form-control" name="jQueryTopLabelEmail" />
+                                                    <span>Email:</span>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="third" role="tabpanel"
+                                        aria-labelledby="third-tab">
+                                        <div class="col-5 pt-2">
+                                            <div class="card px-3">
+                                                <h6 class="my-2">Банковские счета</h6>
+                                                <table class="table table-bordered table-sm table-hover rounded mb-2">
+                                                <tbody>
+                                                  <tr>
+                                                    <th scope="row" class="text-right bg-secondary" >
+                                                        <p class="badge badge-pill badge-outline-light">PRIMARY</p>
+                                                    </th>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row" class="text-right" >
+                                                        <p class="badge badge-pill badge-outline-secondary">ADDITIONAL</p>
+                                                    </th>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row" class="text-right" >
+                                                        <p class="badge badge-pill badge-outline-secondary">ADDITIONAL</p>
+                                                    </th>
+                                                  </tr>
+                                                </tbody>
+                                                </table>
+                                                <div class="h5 simple-icon-plus ml-1 text-primary"></div>
                                             </div>
-                                            <div class="tab-pane fade" id="v-pills-acc" role="tabpanel" aria-labelledby="v-pills-acc-tab">
-                                                <div class="col-10 pt-2">
+                                            </div>
+                                            <div class="col-5 pt-3">
                                                 <div class="card px-3">
-                                                    <h6 class="my-2">Банковские счета</h6>
+                                                    <h6 class="my-2">Кассы</h6>
                                                     <table class="table table-bordered table-sm table-hover rounded mb-2">
                                                     <tbody>
                                                       <tr>
@@ -837,67 +870,41 @@
                                                     </table>
                                                     <div class="h5 simple-icon-plus ml-1 text-primary"></div>
                                                 </div>
+                                            </div> 
+                                    </div>
+                                    <div class="tab-pane fade" id="forth" role="tabpanel"
+                                        aria-labelledby="forth-tab">
+                                        <div class="col-4 mt-4">
+                                            <form class="tooltip-label-right">
+                                                <div class="form-group has-float-label">
+                                                    <input type="text" class="form-control" name="jQueryTopLabelDIR"/>
+                                                    <span>Директор</span>
                                                 </div>
-                                                <div class="col-10 pt-3">
-                                                    <div class="card px-3">
-                                                        <h6 class="my-2">Кассы</h6>
-                                                        <table class="table table-bordered table-sm table-hover rounded mb-2">
-                                                        <tbody>
-                                                          <tr>
-                                                            <th scope="row" class="text-right bg-secondary" >
-                                                                <p class="badge badge-pill badge-outline-light">PRIMARY</p>
-                                                            </th>
-                                                          </tr>
-                                                          <tr>
-                                                            <th scope="row" class="text-right" >
-                                                                <p class="badge badge-pill badge-outline-secondary">ADDITIONAL</p>
-                                                            </th>
-                                                          </tr>
-                                                          <tr>
-                                                            <th scope="row" class="text-right" >
-                                                                <p class="badge badge-pill badge-outline-secondary">ADDITIONAL</p>
-                                                            </th>
-                                                          </tr>
-                                                        </tbody>
-                                                        </table>
-                                                        <div class="h5 simple-icon-plus ml-1 text-primary"></div>
-                                                    </div>
-                                                </div> 
-                                            </div>
-                                            <div class="tab-pane fade" id="v-pills-sign" role="tabpanel" aria-labelledby="v-pills-sign-tab">
-                                                <div class="col-8 mt-4">
-                                                    <form class="tooltip-label-right">
-                                                        <div class="form-group has-float-label">
-                                                            <input type="text" class="form-control" name="jQueryTopLabelDIR"/>
-                                                            <span>Директор</span>
-                                                        </div>
-                                                        <div class="form-group has-float-label">
-                                                            <input type="text" class="form-control" name="jQueryTopLabelDIRNAME"/>
-                                                            <span>Имя директора для подписи</span>
-                                                        </div>
-                                                    </form>
-                                                    <div class="card mb-4">
-                                                        <div class="card-body p-2">
-                                                            <h6 class="mb-2">Факсимиле</h6>
-                                                            <form action="/file-upload">
-                                                                <div class="dropzone">
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                    </div>
+                                                <div class="form-group has-float-label">
+                                                    <input type="text" class="form-control" name="jQueryTopLabelDIRNAME"/>
+                                                    <span>Имя директора для подписи</span>
                                                 </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="v-pills-ano" role="tabpanel" aria-labelledby="v-pills-ano-tab">
-                                                <div class="col-6 mt-4">
-                                                    <form class="tooltip-label-right">
-                                                        <div class="form-group has-float-label">
-                                                            <input type="text" class="form-control" name="jQueryTopLabelMAIN"/>
-                                                            <span>Основной процент НДФЛ</span>
+                                            </form>
+                                            <div class="card mb-4">
+                                                <div class="card-body p-2">
+                                                    <h6 class="mb-2">Факсимиле</h6>
+                                                    <form action="/file-upload">
+                                                        <div class="dropzone">
                                                         </div>
                                                     </form>
                                                 </div>
                                             </div>
-                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="fifth" role="tabpanel"
+                                        aria-labelledby="fifth-tab">
+                                        <div class="col-4 mt-4">
+                                            <form class="tooltip-label-right">
+                                                <div class="form-group has-float-label">
+                                                    <input type="text" class="form-control" name="jQueryTopLabelMAIN"/>
+                                                    <span>Основной процент НДФЛ</span>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
