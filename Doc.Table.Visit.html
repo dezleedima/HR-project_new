@@ -380,8 +380,8 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="Pages.Product.Thumbs.html">
-                                        <i class="simple-icon-list"></i> <span class="d-inline-block">Сотрудник</span>
+                                    <a href="Doc.Users.Control.html">
+                                        <i class="simple-icon-list"></i> <span class="d-inline-block">Сотрудники</span>
                                     </a>
                                 </li>
                             </ul>
@@ -395,8 +395,8 @@
                         <div id="collapseProfile" class="collapse show">
                             <ul class="list-unstyled inner-level-menu">
                                 <li>
-                                    <a href="Pages.Profile.Social.html">
-                                        <i class="simple-icon-share"></i> <span class="d-inline-block">??????</span>
+                                    <a href="Doc.Table.Visit.html">
+                                        <i class="simple-icon-doc"></i> <span class="d-inline-block">Таблица <br> Посещения</span>
                                     </a>
                                 </li>
                                 <li>
@@ -693,25 +693,25 @@
                         <div id="collapseAuthorization" class="collapse show">
                             <ul class="list-unstyled inner-level-menu">
                                 <li>
-                                    <a href="Pages.Auth.Login.html">
+                                    <a href="Doc.Auth.Login.html">
                                         <i class="simple-icon-user-following"></i> <span
                                             class="d-inline-block">Login</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="Pages.Auth.Register.html">
+                                    <a href="Doc.Auth.Register.html">
                                         <i class="simple-icon-user-follow"></i> <span
                                             class="d-inline-block">Register</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="Pages.Auth.ForgotPassword.html">
+                                    <a href="Doc.Auth.ForgotPassword.html">
                                         <i class="simple-icon-user-unfollow"></i> <span class="d-inline-block">Forgot
                                             Password</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="Doc.Users.Control.html">
+                                    <a href="#">
                                         <i class="simple-icon-user-following"></i> <span class="d-inline-block">Управление <br>
                                             пользователями</span>
                                     </a>
@@ -730,21 +730,9 @@
                 <div class="col">
 
                     <h2 class="text-primary mb-3 text-center"><strong>ТАБЛИЦА ПОСЕЩЕНИЯ</strong></h2>
-                        
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                          <a class="nav-link active h6" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Вычислительный Период</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <a class="nav-link h6" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Всего Наработанно</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <a class="nav-link h6" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Не Объявился</a>
-                        </li>
-                    </ul>
 
-                    <div class="row my-3 align-items-center">
-                        <div class="row col-10">
+                    <div class="row my-3 align-items-center mt-5">
+                        <div class="row col-11">
 
                             <div class="col-3">
                                 <div class="input-group">
@@ -759,9 +747,9 @@
                                 </div>
                             </div>
                             <div class="row col-8 pl-2">
-                                <div class="col-lg-2 col-md-4 px-2">
+                                <div class="col-lg-2 col-md-3 px-2">
                                     <div class="form-group has-float-label ">
-                                        <label for="1">Выбор Года</label>
+                                        <label for="1">Год</label>
                                         <select class="form-control rounded-lg border-primary" name="jQueryTopLabelPOD123"
                                         id="jQueryTopLabelPOD123">
                                         <option></option>
@@ -778,9 +766,9 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-5 px-2">
+                                <div class="col-lg-2 col-md-4 px-2">
                                     <div class="form-group has-float-label ">
-                                        <label for="1">Выбор Месяца</label>
+                                        <label for="1">Месяц</label>
                                         <select class="form-control rounded-lg border-primary" name="jQueryTopLabelPOD123"
                                         id="jQueryTopLabelPOD123">
                                         <option></option>
@@ -799,9 +787,9 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-5 px-2">
+                                <div class="col-lg-3 col-md-4 px-2">
                                     <div class="form-group has-float-label ">
-                                        <label for="1">Выбор Департамента</label>
+                                        <label for="1">Департамент</label>
                                         <select class="form-control rounded-lg border-primary" name="jQueryTopLabelPOD1234"
                                         id="jQueryTopLabelPOD1234">
                                         <option></option>
@@ -811,269 +799,202 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="dropdown d-inline-block pl-2">
-                                    <button class="btn btn-outline-primary rounded-lg dropdown-toggle mr-2" type="button"
-                                        id="dropdownMenuRas1" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">
-                                        Выбор типа
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuRas1">
-                                        <div class="form-check dropdown-item ml-3 col-10">
-                                            <div>
-                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck11">
-                                            <label class="form-check-label" for="defaultCheck11">
-                                                Дата приема
-                                            </label>
-                                            </div>
-                                            <div>
-                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck12">
-                                            <label class="form-check-label" for="defaultCheck12">
-                                                Оклад
-                                            </label>
-                                            </div>
-                                            <div>
-                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck13">
-                                            <label class="form-check-label" for="defaultCheck13">
-                                                Подразделение
-                                            </label>
-                                            </div>
-                                            <div>
-                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck14">
-                                            <label class="form-check-label" for="defaultCheck14">
-                                                График работы
-                                            </label>
-                                            </div>
-                                        </div>
+                                <div class="col-lg-3 col-md-4 px-2">
+                                    <div class="form-group has-float-label ">
+                                        <label for="1">Заполнить</label>
+                                        <select class="form-control rounded-lg border-primary" name="jQueryTopLabelPOD12345"
+                                        id="jQueryTopLabelPOD12345">
+                                        <option></option>
+                                        <option>Из Excel</option>
+                                        <option>Заполнить стандартно</option>
+                                        </select>
                                     </div>
                                 </div>
+
+                                <label for="inputImage1" title="Upload image file"><a href="#"></a><i class="h2 mr-2 simple-icon-doc btn-upload text-primary"></i>
+                                    <input type="file" class="sr-only" id="inputImage1" name="file"
+                                    accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff">
+                                </label>
+
+                                <a class="btn-upload" href="#"><i class="h2 simple-icon-share-alt"></i></a>
+   
                             </div>                                                      
                         </div>
                     </div>
 
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                           
-                            <table class="table table-bordered table-light table-sm table-hover rounded ">
-                                <thead class="text-center ">
-                                  <tr class="">
-                                    <th scope="col" class="py-2 pl-4 bg-secondary text-left align-middle">Январь, 2021</th>
-                                    <th scope="col" class="align-middle">1</th>
-                                    <th scope="col" class="align-middle text-muted">2</th>
-                                    <th scope="col" class="align-middle text-muted">3</th>
-                                    <th scope="col" class="align-middle">4</th>
-                                    <th scope="col" class="align-middle">5</th>
-                                    <th scope="col" class="align-middle">6</th>
-                                    <th scope="col" class="align-middle">7</th>
-                                    <th scope="col" class="align-middle">8</th>
-                                    <th scope="col" class="align-middle text-muted">9</th>
-                                    <th scope="col" class="align-middle text-muted">10</th>
-                                    <th scope="col" class="align-middle">11</th>
-                                    <th scope="col" class="align-middle">12</th>
-                                    <th scope="col" class="align-middle">13</th>
-                                    <th scope="col" class="align-middle">14</th>
-                                    <th scope="col" class="align-middle">15</th>
-                                    <th scope="col" class="align-middle text-muted">16</th>
-                                    <th scope="col" class="align-middle text-muted">17</th>
-                                    <th scope="col" class="align-middle">18</th>
-                                    <th scope="col" class="align-middle">19</th>
-                                    <th scope="col" class="align-middle">20</th>
-                                    <th scope="col" class="align-middle">21</th>
-                                    <th scope="col" class="align-middle">22</th>
-                                    <th scope="col" class="align-middle text-muted">23</th>
-                                    <th scope="col" class="align-middle text-muted">24</th>
-                                    <th scope="col" class="align-middle">25</th>
-                                    <th scope="col" class="align-middle">26</th>
-                                    <th scope="col" class="align-middle">27</th>
-                                    <th scope="col" class="align-middle">28</th>
-                                    <th scope="col" class="align-middle">29</th>
-                                    <th scope="col" class="align-middle text-muted">30</th>
-                                    <th scope="col" class="align-middle text-muted">31</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
+                    <table class="table table-bordered table-light table-sm table-hover rounded ">
+                        <thead class="text-center ">
+                          <tr class="">
+                            <th scope="col" class="py-2 pl-4 bg-secondary text-left align-middle">Январь, 2021</th>
+                            <th scope="col" class="align-middle">1</th>
+                            <th scope="col" class="align-middle text-muted">2</th>
+                            <th scope="col" class="align-middle text-muted">3</th>
+                            <th scope="col" class="align-middle">4</th>
+                            <th scope="col" class="align-middle">5</th>
+                            <th scope="col" class="align-middle">6</th>
+                            <th scope="col" class="align-middle">7</th>
+                            <th scope="col" class="align-middle">8</th>
+                            <th scope="col" class="align-middle text-muted">9</th>
+                            <th scope="col" class="align-middle text-muted">10</th>
+                            <th scope="col" class="align-middle">11</th>
+                            <th scope="col" class="align-middle">12</th>
+                            <th scope="col" class="align-middle">13</th>
+                            <th scope="col" class="align-middle">14</th>
+                            <th scope="col" class="align-middle">15</th>
+                            <th scope="col" class="align-middle text-muted">16</th>
+                            <th scope="col" class="align-middle text-muted">17</th>
+                            <th scope="col" class="align-middle">18</th>
+                            <th scope="col" class="align-middle">19</th>
+                            <th scope="col" class="align-middle">20</th>
+                            <th scope="col" class="align-middle">21</th>
+                            <th scope="col" class="align-middle">22</th>
+                            <th scope="col" class="align-middle text-muted">23</th>
+                            <th scope="col" class="align-middle text-muted">24</th>
+                            <th scope="col" class="align-middle">25</th>
+                            <th scope="col" class="align-middle">26</th>
+                            <th scope="col" class="align-middle">27</th>
+                            <th scope="col" class="align-middle">28</th>
+                            <th scope="col" class="align-middle">29</th>
+                            <th scope="col" class="align-middle text-muted">30</th>
+                            <th scope="col" class="align-middle text-muted">31</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="">
+                                <th scope="col" class="pl-2 text-left align-middle">
+                                    <div class="d-inline">
+                                        <a class="simple-icon-arrow-down h6 text-primary mb-0" data-toggle="collapse" href="#collapseExample1111"
+                                                role="button" aria-expanded="true" aria-controls="collapseExample111"></a>
+                                                <h6 class="d-inline ml-2">Сотрудник</h6>                                            
+                                    </div>
+                                </th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                <th scope="col" class="align-middle"></th>
+                                
+                            </tr>
+                            <tr>
+                                <div class="collapse" id="collapseExample1111">
+                                    <div>
+                                        <table class="table table-bordered table-sm"> 
+                                            <thead>
 
-                                  </tr>
-                                </tbody>
-                            </table> 
-                            <div class="float-md-right dropdown-as-select mt-4" id="pageCountDatatable">
-                                <span class="text-muted text-small">Displaying 1-1 of 1 items </span>
-                                <button class="btn btn-outline-dark btn-xs dropdown-toggle" type="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    10
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="#">10</a>
-                                    <a class="dropdown-item active" href="#">50</a>
-                                    <a class="dropdown-item" href="#">100</a>
+                                            </thead>
+                                            <tbody>
+                                                <th scope="col" class="pl-2 text-left align-middle">
+                                                    Сотрудник
+                                                </th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                                <th scope="col" class="align-middle"></th>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
-                            </div>
-                            <nav class="pt-5 ">
-                                <ul class="pagination pagination-sm justify-content-center mb-0">
-                                    <li class="page-item ">
-                                        <a class="page-link first" href="#">
-                                            <i class="simple-icon-control-start"></i>
-                                        </a>
-                                    </li>
-                                    <li class="page-item ">
-                                        <a class="page-link prev" href="#">
-                                            <i class="simple-icon-arrow-left"></i>
-                                        </a>
-                                    </li>
-                                    <li class="page-item disabled">
-                                        <a class="page-link" href="#" tabindex="-1">1</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">2</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">3</a>
-                                    </li>
-                                    <li class="page-item ">
-                                        <a class="page-link next" href="#" aria-label="Next">
-                                            <i class="simple-icon-arrow-right"></i>
-                                        </a>
-                                    </li>
-                                    <li class="page-item ">
-                                        <a class="page-link last" href="#">
-                                            <i class="simple-icon-control-end"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                            <table class="table table-bordered table-light table-sm table-hover rounded ">
-                                <thead class="text-center ">
-                                  <tr class=" ">
-                                    <th scope="col" class="py-2 pl-4 bg-secondary text-left align-middle">Январь, 2021</th>
-                                    <th scope="col" class="align-middle">Н/часы <br> I половина</th>
-                                    <th scope="col" class="align-middle">Н/часы <br> II половина</th>
-                                    <th scope="col" class="align-middle">Н/часы <br> В течении месяца</th>
-                                    <th scope="col" class="align-middle">Н/день <br> В течении месяца</th>
-                                    <th scope="col" class="align-middle">П/часы <br> В течении месяца</th>
-                                    <th scope="col" class="align-middle">Н.С/часы <br> В течении месяца</th>
-                                    <th scope="col" class="align-middle">Н/часы <br> выходные</th>
-                                    <th scope="col" class="align-middle">Остальные <br> часы</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-
-                                  </tr>
-                                </tbody>
-                            </table> 
-                            <div class="float-md-right dropdown-as-select mt-4" id="pageCountDatatable">
-                                <span class="text-muted text-small">Displaying 1-1 of 1 items </span>
-                                <button class="btn btn-outline-dark btn-xs dropdown-toggle" type="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    10
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="#">10</a>
-                                    <a class="dropdown-item active" href="#">50</a>
-                                    <a class="dropdown-item" href="#">100</a>
-                                </div>
-                            </div>
-                            <nav class="pt-5 ">
-                                <ul class="pagination pagination-sm justify-content-center mb-0">
-                                    <li class="page-item ">
-                                        <a class="page-link first" href="#">
-                                            <i class="simple-icon-control-start"></i>
-                                        </a>
-                                    </li>
-                                    <li class="page-item ">
-                                        <a class="page-link prev" href="#">
-                                            <i class="simple-icon-arrow-left"></i>
-                                        </a>
-                                    </li>
-                                    <li class="page-item disabled">
-                                        <a class="page-link" href="#" tabindex="-1">1</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">2</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">3</a>
-                                    </li>
-                                    <li class="page-item ">
-                                        <a class="page-link next" href="#" aria-label="Next">
-                                            <i class="simple-icon-arrow-right"></i>
-                                        </a>
-                                    </li>
-                                    <li class="page-item ">
-                                        <a class="page-link last" href="#">
-                                            <i class="simple-icon-control-end"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                            <table class="table table-bordered table-light table-sm table-hover rounded ">
-                                <thead class="text-center ">
-                                  <tr class=" ">
-                                    <th scope="col" class="py-2 pl-4 bg-secondary text-left align-middle">Январь, 2021</th>
-                                    <th scope="col" class="align-middle">Бюллетень <br> кол-во дней</th>
-                                    <th scope="col" class="align-middle">Отпуск <br> кол-во дней</th>
-                                    <th scope="col" class="align-middle">Неопл. отпуск <br> кол-во дней</th>
-                                    <th scope="col" class="align-middle">Другие пропуски <br> кол-во дней</th>
-                                    <th scope="col" class="align-middle">Выходные/Праздники <br> кол-во дней</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-
-                                  </tr>
-                                </tbody>
-                            </table> 
-                            <div class="float-md-right dropdown-as-select mt-4" id="pageCountDatatable">
-                                <span class="text-muted text-small">Displaying 1-1 of 1 items </span>
-                                <button class="btn btn-outline-dark btn-xs dropdown-toggle" type="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    10
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="#">10</a>
-                                    <a class="dropdown-item active" href="#">50</a>
-                                    <a class="dropdown-item" href="#">100</a>
-                                </div>
-                            </div>
-                            <nav class="pt-5 ">
-                                <ul class="pagination pagination-sm justify-content-center mb-0">
-                                    <li class="page-item ">
-                                        <a class="page-link first" href="#">
-                                            <i class="simple-icon-control-start"></i>
-                                        </a>
-                                    </li>
-                                    <li class="page-item ">
-                                        <a class="page-link prev" href="#">
-                                            <i class="simple-icon-arrow-left"></i>
-                                        </a>
-                                    </li>
-                                    <li class="page-item disabled">
-                                        <a class="page-link" href="#" tabindex="-1">1</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">2</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">3</a>
-                                    </li>
-                                    <li class="page-item ">
-                                        <a class="page-link next" href="#" aria-label="Next">
-                                            <i class="simple-icon-arrow-right"></i>
-                                        </a>
-                                    </li>
-                                    <li class="page-item ">
-                                        <a class="page-link last" href="#">
-                                            <i class="simple-icon-control-end"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
+                            </tr>
+                        </tbody>
+                    </table> 
+                    <div class="float-md-right dropdown-as-select mt-4" id="pageCountDatatable">
+                        <span class="text-muted text-small">Displaying 1-1 of 1 items </span>
+                        <button class="btn btn-outline-dark btn-xs dropdown-toggle" type="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            10
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">10</a>
+                            <a class="dropdown-item active" href="#">50</a>
+                            <a class="dropdown-item" href="#">100</a>
                         </div>
                     </div>
+                    <nav class="pt-5 ">
+                        <ul class="pagination pagination-sm justify-content-center mb-0">
+                            <li class="page-item ">
+                                <a class="page-link first" href="#">
+                                    <i class="simple-icon-control-start"></i>
+                                </a>
+                            </li>
+                            <li class="page-item ">
+                                <a class="page-link prev" href="#">
+                                    <i class="simple-icon-arrow-left"></i>
+                                </a>
+                            </li>
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item ">
+                                <a class="page-link next" href="#" aria-label="Next">
+                                    <i class="simple-icon-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="page-item ">
+                                <a class="page-link last" href="#">
+                                    <i class="simple-icon-control-end"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
