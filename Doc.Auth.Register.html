@@ -29,31 +29,43 @@
                                 <br>If you are a member, please
                                 <a href="#" class="white">login</a>.
                             </p>
-                        </div>
-                        <div class="form-side">
-                            <div class="mb-5 ">
-                                <a class="h4 text-primary" href="Dashboard.Default.html">
-                                    WeDo
-                                </a>
+                        </div><div class="form-side py-5">
+                            <div class="text-center mb-2">
+                                <h2 class="text-primary">WeDo</h2>
                             </div>
-                            <h6 class="mb-4">Register</h6>
-
+                            <div class="d-flex justify-content-center">
+                                <h6 class="mb-3">Already signed up?</h6>
+                                <a class="ml-2 h6 text-primary mb-0" href="#">Log in</a>
+                            </div>
                             <form>
-                                <label class="form-group has-float-label mb-4">
-                                    <input class="form-control" />
-                                    <span>Name</span>
-                                </label>
-                                <label class="form-group has-float-label mb-4">
+                                <div class="mb-3 text-center">
+                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                        
+                                        <label class="btn btn-outline-primary">
+                                            <input type="radio" name="options" id="option2"> Personal
+                                        </label>
+                                        <label class="btn btn-outline-primary">
+                                            <input type="radio" name="options" id="option3"> Business
+                                        </label>
+                                    </div>
+                                </div>
+                                <label class="form-group has-float-label mb-3">
                                     <input class="form-control" />
                                     <span>E-mail</span>
                                 </label>
-                                <label class="form-group has-float-label mb-4">
+
+                                <label class="form-group has-float-label mb-3">
                                     <input class="form-control" type="password" placeholder="" />
                                     <span>Password</span>
                                 </label>
-                                <div class="d-flex justify-content-end align-items-center">
-                                    <button class="btn btn-primary btn-lg btn-shadow" type="submit">REGISTER</button>
-                                </div>
+                                <label class="form-group has-float-label mb-3">
+                                    <input class="form-control" type="password" placeholder="" />
+                                    <span>Repeat Password</span>
+                                </label>
+                                <button class="btn btn-primary btn-block btn-shadow mb-3" type="submit">Sign up</button>
+                                
+                                <h6 class="text-center">OR</h6>
+                                <button class="btn btn-outline-primary btn-block btn-shadow mb-3" type="submit">Sign up with Google</button>
                             </form>
                         </div>
                     </div>
